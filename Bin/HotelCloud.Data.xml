@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HotelCloud.Data</name>
+    </assembly>
+    <members>
+        <member name="T:HotelCloud.Data.BasePager">
+            <summary>
+            分页父类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.BasePager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.BasePager.PageListByLi(System.String,System.String,System.String,System.String)">
+            <summary>
+            页面列表
+            </summary>
+            <param name="liclass">页面li标签class</param>
+            <param name="currentliclass">当前页li标签class</param>
+            <param name="fontlink">a标签中页数的前半部分</param>
+            <param name="endLink">a标桥中页数的后半部分</param>
+            <returns>返回分页页数列表</returns>
+        </member>
+        <member name="M:HotelCloud.Data.BasePager.ToString">
+            <summary>
+            得到整个页面控件的html代码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:HotelCloud.Data.BasePager._pagesize">
+            <summary>
+            页面
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.BasePager.getParam(System.String)">
+            <summary>
+            获取url参数或form参数
+            </summary>
+            <param name="rqname"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.pageinput">
+            <summary>
+            记录当前页面的html控件
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.wherestring">
+            <summary>
+            条件sql语句
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.script">
+            <summary>
+            内置脚本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.PageList">
+            <summary>
+            所有页面列表
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.NextPageLink">
+            <summary>
+            下一页链接
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.PrePageLink">
+            <summary>
+            上一页链接
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.pagename">
+            <summary>
+            页面url名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.PagerDataSet">
+            <summary>
+             当页数据集
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.PageSize">
+            <summary>
+            页面记录数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.NextPage">
+            <summary>
+            下一页
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.PrePage">
+            <summary>
+            上一页
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.MaxPage">
+            <summary>
+            最大页数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.BasePager.spaceData">
+            <summary>
+            空格数据集
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.Instance">
+            <summary>
+            返回DbProviderFactory实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.DeriveParameters(System.Data.IDbCommand)">
+            <summary>
+            检索SQL参数信息并填充
+            </summary>
+            <param name="cmd"></param>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.MakeParam(System.String,System.Data.DbType,System.Int32)">
+            <summary>
+            创建SQL参数
+            </summary>
+            <param name="ParamName"></param>
+            <param name="DbType"></param>
+            <param name="Size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.IsFullTextSearchEnabled">
+            <summary>
+            是否支持全文搜索
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.IsCompactDatabase">
+            <summary>
+            是否支持压缩数据库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.IsBackupDatabase">
+            <summary>
+            是否支持备份数据库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.GetLastIdSql">
+            <summary>
+            返回刚插入记录的自增ID值, 如不支持则为""
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.IsDbOptimize">
+            <summary>
+            是否支持数据库优化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.IsShrinkData">
+            <summary>
+            是否支持数据库收缩
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.IDbProvider.IsStoreProc">
+            <summary>
+            是否支持存储过程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Data.SQLPager">
+            <summary>
+            Pager 的摘要说明
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.SQLPager.#ctor(System.String)">
+            <summary>
+            构造函数，根据sql语句分页
+            </summary>
+            <param name="sqlstr">sql语句</param>
+        </member>
+        <member name="M:HotelCloud.Data.SQLPager.#ctor(System.String,System.String,System.String)">
+            <summary>
+            根据表名，条件名，排序分页
+            </summary>
+            <param name="table">表名</param>
+            <param name="where">条件语句</param>
+            <param name="orderfield">排序字段</param>
+        </member>
+        <member name="M:HotelCloud.Data.SQLPager.DisposeD">
+            <summary>
+            垃圾收集
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.SQLPager.PagerDataSet">
+            <summary>
+             当页数据集
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Data.Pager">
+            <summary>
+            分页类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.#ctor(System.String)">
+            <summary>
+            根据sql语句分页
+            </summary>
+            <param name="sql">传入完整的sql语句</param>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.#ctor(System.String,System.String,System.String)">
+            <summary>
+            根据表名，条件名，排序分页
+            </summary>
+            <param name="table">表名</param>
+            <param name="where">条件语句</param>
+            <param name="orderfield">排序字段</param>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.#ctor(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            根据表名，条件名，排序，是否搜索，分页
+            </summary>
+            <param name="table">表名</param>
+            <param name="where">条件语句</param>
+            <param name="orderfield">排序字段</param>
+            <param name="isSearch">是否搜索</param>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.PageListByLi(System.String,System.String,System.String,System.String)">
+            <summary>
+            页面列表
+            </summary>
+            <param name="liclass">页面li标签class</param>
+            <param name="currentliclass">当前页li标签class</param>
+            <param name="fontlink">a标签中页数的前半部分</param>
+            <param name="endLink">a标桥中页数的后半部分</param>
+            <returns>返回分页页数列表</returns>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.ToString">
+            <summary>
+            得到整个页面控件的html代码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.getPageData">
+            <summary>
+            获取数据库数据
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.DisposeD">
+            <summary>
+            垃圾收集
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Data.Pager._pagesize">
+            <summary>
+            页面
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.Pager.getParam(System.String)">
+            <summary>
+            获取url参数或form参数
+            </summary>
+            <param name="rqname"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.Orderfiled">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.Tablename">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.whereInput">
+            <summary>
+            记录条件的html控件 
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.pageinput">
+            <summary>
+            记录当前页面的html控件
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.wherestring">
+            <summary>
+            条件sql语句
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.script">
+            <summary>
+            内置脚本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.PageList">
+            <summary>
+            所有页面列表
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.NextPageLink">
+            <summary>
+            下一页链接
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.PrePageLink">
+            <summary>
+            上一页链接
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.pagename">
+            <summary>
+            页面url名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.PagerDataSet">
+            <summary>
+             当页数据集
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.PageSize">
+            <summary>
+            页面记录数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.NextPage">
+            <summary>
+            下一页
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.PrePage">
+            <summary>
+            上一页
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.MaxPage">
+            <summary>
+            最大页数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.RowCount">
+            <summary>
+            行总数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.Pager.spaceData">
+            <summary>
+            空格数据集
+            </summary>
+        </member>
+        <member name="T:SqlHelper">
+            <summary>
+            数据库的通用访问代码
+            此类为抽象类，不允许实例化，在应用时直接调用即可
+            </summary>
+        </member>
+        <member name="M:SqlHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+             <summary>
+            执行一个不需要返回值的SqlCommand命令，通过指定专用的连接字符串。
+             使用参数数组形式提供参数列表 
+             </summary>
+             <remarks>
+             使用示例：
+              int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+             </remarks>
+             <param name="connectionString">一个有效的数据库连接字符串</param>
+             <param name="commandType">SqlCommand命令类型 (存储过程， T-SQL语句， 等等。)</param>
+             <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
+             <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
+             <returns>返回一个数值表示此SqlCommand命令执行后影响的行数</returns>
+        </member>
+        <member name="M:SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+             <summary>
+            执行一条不返回结果的SqlCommand，通过一个已经存在的数据库连接 
+             使用参数数组提供参数
+             </summary>
+             <remarks>
+             使用示例：  
+              int result = ExecuteNonQuery(conn, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+             </remarks>
+             <param name="conn">一个现有的数据库连接</param>
+             <param name="commandType">SqlCommand命令类型 (存储过程， T-SQL语句， 等等。)</param>
+             <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
+             <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
+             <returns>返回一个数值表示此SqlCommand命令执行后影响的行数</returns>
+        </member>
+        <member name="M:SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行一条不返回结果的SqlCommand，通过一个已经存在的数据库事物处理 
+            使用参数数组提供参数
+            </summary>
+            <remarks>
+            使用示例： 
+             int result = ExecuteNonQuery(trans, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="trans">一个存在的 sql 事物处理</param>
+            <param name="commandType">SqlCommand命令类型 (存储过程， T-SQL语句， 等等。)</param>
+            <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
+            <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
+            <returns>返回一个数值表示此SqlCommand命令执行后影响的行数</returns>
+        </member>
+        <member name="M:SqlHelper.ExecuteReader(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行一条返回结果集的SqlCommand命令，通过专用的连接字符串。
+            使用参数数组提供参数
+            </summary>
+            <remarks>
+            使用示例：  
+             SqlDataReader r = ExecuteReader(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">一个有效的数据库连接字符串</param>
+            <param name="commandType">SqlCommand命令类型 (存储过程， T-SQL语句， 等等。)</param>
+            <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
+            <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
+            <returns>返回一个包含结果的SqlDataReader</returns>
+        </member>
+        <member name="M:SqlHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行一条返回第一条记录第一列的SqlCommand命令，通过专用的连接字符串。 
+            使用参数数组提供参数
+            </summary>
+            <remarks>
+            使用示例：  
+             Object obj = ExecuteScalar(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">一个有效的数据库连接字符串</param>
+            <param name="commandType">SqlCommand命令类型 (存储过程， T-SQL语句， 等等。)</param>
+            <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
+            <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
+            <returns>返回一个object类型的数据，可以通过 Convert.To{Type}方法转换类型</returns>
+        </member>
+        <member name="M:SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行一条返回第一条记录第一列的SqlCommand命令，通过已经存在的数据库连接。
+            使用参数数组提供参数
+            </summary>
+            <remarks>
+            使用示例： 
+             Object obj = ExecuteScalar(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="conn">一个已经存在的数据库连接</param>
+            <param name="commandType">SqlCommand命令类型 (存储过程， T-SQL语句， 等等。)</param>
+            <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
+            <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
+            <returns>返回一个object类型的数据，可以通过 Convert.To{Type}方法转换类型</returns>
+        </member>
+        <member name="M:SqlHelper.CacheParameters(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            缓存参数数组
+            </summary>
+            <param name="cacheKey">参数缓存的键值</param>
+            <param name="cmdParms">被缓存的参数列表</param>
+        </member>
+        <member name="M:SqlHelper.GetCachedParameters(System.String)">
+            <summary>
+            获取被缓存的参数
+            </summary>
+            <param name="cacheKey">用于查找参数的KEY值</param>
+            <returns>返回缓存的参数数组</returns>
+        </member>
+        <member name="M:SqlHelper.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            为执行命令准备参数
+            </summary>
+            <param name="cmd">SqlCommand 命令</param>
+            <param name="conn">已经存在的数据库连接</param>
+            <param name="trans">数据库事物处理</param>
+            <param name="cmdType">SqlCommand命令类型 (存储过程， T-SQL语句， 等等。)</param>
+            <param name="cmdText">Command text，T-SQL语句 例如 Select * from Products</param>
+            <param name="cmdParms">返回带参数的命令</param>
+        </member>
+        <member name="M:SqlHelper.ExecuteDataSet(System.String,System.Data.CommandType,System.String)">
+            
+            <summary>
+            返加dataset
+            </summary>
+            <param name="connectionString">连接字符串</param>
+            <param name="cmdType">命令类型，如StoredProcedure,Text</param>
+            <param name="cmdText">the stored procedure name or T-SQL command</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:SqlHelper.ExecuteDataSet(System.Data.CommandType,System.String)">
+            
+            <summary>
+            使用定义好的连接字符串
+            </summary>
+            <param name="cmdType">命令文本类型</param>
+            <param name="cmdText">命令文本</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:SqlHelper.ExecuteDataSet(System.String)">
+            
+            <summary>
+            使用定义好的连接字符串,CommandType默认为StoredProcedure
+            </summary>
+            <param name="cmdText">存储过程名</param>
+            <returns>object</returns>
+        </member>
+        <member name="M:SqlHelper.RunProcedure(System.String,System.Data.IDataParameter[],System.Int32@)">
+            <summary>
+            执行存储过程，返回影响的行数		
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <param name="rowsAffected">影响的行数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SqlHelper.BuildIntCommand(System.Data.SqlClient.SqlConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            创建 SqlCommand 对象实例(用来返回一个整数值)	
+            </summary>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlCommand 对象实例</returns>
+        </member>
+        <member name="M:SqlHelper.BuildQueryCommand(System.Data.SqlClient.SqlConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            构建 SqlCommand 对象(用来返回一个结果集，而不是一个整数值)
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlCommand</returns>
+        </member>
+        <member name="T:SqlDataAccess">
+            <summary>
+            SqlDataAccess 的摘要说明
+            </summary>
+        </member>
+        <member name="M:SqlDataAccess.GetProvinceInfo(System.String)">
+            <summary>
+            获取省的信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SqlDataAccess.GetCityInfo(System.String,System.String)">
+            <summary>
+            获得市的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SqlDataAccess.GetAreaInfo(System.String)">
+            <summary>
+            获得区的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SqlDataAccess.GetInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Data.ADOHelper">
+            <summary>
+            数据操作辅助类
+             
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Data.ADOHelper._ConnName">
+            <summary>
+            webconfig中的链接字符串名称
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Data.ADOHelper.con">
+            <summary>
+            数据库连接
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Data.ADOHelper._ConnectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.#ctor">
+            <summary>
+            生成一个help实例，默认webconfig连接字符串名 "oleconn"
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.#ctor(System.String)">
+            <summary>
+            生成一个help实例，读取指定的链接字符串
+            </summary>
+            <param name="ConnNames">连接字符串名</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.reGetConn">
+            <summary>
+            重新获取连接字符串
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.getConnectionString(System.String)">
+            <summary>
+            获取指定webconfig配置节名称的连接字符串
+            </summary>
+            <param name="param_connName">在webconfig中配置节的名称</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.getConnectionString">
+            <summary>
+            获取webconfig默认链接字符串
+            </summary>
+            <returns>默认链接字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.CheckConnection">
+            <summary>
+            数据库连接检查
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.DisposeD">
+            <summary>
+            销毁help对象，关闭数据库连接
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.GetDataSetBySqlForSQL2005(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            根据sql语句获取分页数据
+            </summary>
+            <param name="cmd">sql语句</param>
+            <param name="PageSize">页面大小</param>
+            <param name="PageIndex">第x页</param>
+            <param name="rowcount">总数</param>
+            <returns>返回分页后的当前dataset</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.GetDataSetBySql(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            根据sql语句获取分页数据
+            </summary>
+            <param name="cmd">sql语句</param>
+            <param name="PageSize">页面大小</param>
+            <param name="PageIndex">第x页</param>
+            <param name="rowcount">总数</param>
+            <returns>返回分页后的当前dataset</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.GetDataSetBySql(System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获得分页后的dataset
+            </summary>
+            <param name="cmd">主sql</param>
+            <param name="PageSize">页面大小，数据条数</param>
+            <param name="PageIndex">当前页数</param>
+            <param name="strWhere">条件子句</param>
+            <param name="Ordersql">排序子句</param>
+            <param name="rowCount">数据条数</param>
+            <returns>分页后的dataset</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.GetDataSetBySql(System.String,System.Int32,System.Int32,System.String,System.String,System.Int32@)">
+            <summary>
+            按照表名等参数获取分页dataset
+            </summary>
+            <param name="table"></param>
+            <param name="PageSize"></param>
+            <param name="PageIndex"></param>
+            <param name="strWhere"></param>
+            <param name="Ordersql"></param>
+            <param name="rowcount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.GetSetBySql(System.String,System.String,System.String,System.String)">
+            <summary>
+            按照当天时间分页dataset
+            </summary>
+            <param name="table"></param>
+            <param name="PageSize"></param>
+            <param name="PageIndex"></param>
+            <param name="strWhere"></param>
+            <param name="Ordersql"></param>
+            <param name="rowcount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteGet(System.String)">
+            <summary>
+            根据SQL语句获得DataSet
+            </summary>
+            <param name="cmd">SQL命令</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteGet(System.String,System.String)">
+            <summary>
+            根据SQL语句获得DataSet
+            </summary>
+            <param name="cmd">SQL命令</param>
+            <param name="tablename">指定表名</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteGetStr(System.String,System.String)">
+            <summary>
+            直接根据SQL获得获得某一字段内容L
+            </summary>
+            <param name="cmd">SQL命令</param>
+            <param name="str">字段名</param>
+            <returns>字段的值</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteGetStr(System.String)">
+            <summary>
+            直接根据SQL获得获得某一字段内容
+            </summary>
+            <param name="cmd">SQL语句</param>
+            <returns>得到字段值</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteHaveData(System.String)">
+            <summary>
+            执行sql语句，返回是否有符合该语句的记录,sql语句应有一个字段返回，类似select top 1 id from coupon where couponno ,不需要用count()语句，效率比较低
+            </summary>
+            <param name="cmd">条件sql</param>
+            <returns>true 有，false没有符合条件的</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteRead(System.String)">
+            <summary>
+            根据SQL语句获得DataReader
+            </summary>
+            <param name="cmd">SQL命令</param>
+            <returns>DataReader</returns>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteUpdate(System.String)">
+            <summary>
+            运行SQL命令
+            </summary>
+            <param name="cmd">SQL命令</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteDataTable(System.String,System.String)">
+             <summary>
+            </summary>
+            	<param name="tableName">表名</param>
+            	<param name="commandText">获取表的SQL命令</param>
+            	<returns>数据表</returns>
+            	
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.UpdateFromDataSet(System.Data.DataSet,System.String)">
+            <summary>
+            用DataSet更新到数据库
+             1.只能更新一个表，不能更新两个或两个以上相关联的表
+             2.表中必须有主键
+             3.更新的表中字段不能有image类型的		
+            </summary>
+            <param name="ds">DataSet 要更新的dataset</param>
+            <param name="strTblName">strTblName 对应的数据库名</param>
+            <param name="strConnection">strConnection 链接字符串</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.DeleteRowFromTable(System.Data.DataTable,System.Int64)">
+            <summary>
+            从表中删除行(长整型)
+            </summary>
+            <param name="ParamTable">表名</param>
+            <param name="TablePK">要删除的主键值(长整型)</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.DeleteRowFromTable(System.Data.DataTable,System.Int32)">
+            <summary>
+            从表中删除行(整型)
+            </summary>
+            <param name="ParamTable">表名</param>
+            <param name="TablePK">要删除的主键值(整型)</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.DeleteRowFromTable(System.String,System.Int32)">
+            <summary>
+            从表中删除行(整型)
+            </summary>
+            <param name="ParamTable">表名</param>
+            <param name="TablePK">要删除的主键值(整型)</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.DeleteRowFromTable(System.Data.DataTable,System.String)">
+            <summary>
+            从表中删除行(字符型)
+            </summary>
+            <param name="ParamTable">表名</param>
+            <param name="TablePK">要删除的主键值(字符型)</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteProduce(System.String,System.String,System.String)">
+            <summary>
+            运行SQL存储过程
+            </summary>
+            <param name="cmd">SQL命令</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.ExecuteProduce(System.String,System.String[],System.String[])">
+            <summary>
+            运行SQL存储过程
+            </summary>
+            <param name="cmd">SQL命令</param>
+        </member>
+        <member name="M:HotelCloud.Data.ADOHelper.RowUpdateToDataSet(System.Data.DataTable)">
+            <summary>
+            更新行到DataSet,包括新增,测试用
+            </summary>
+            <param name="myTable"></param>
+        </member>
+        <member name="P:HotelCloud.Data.ADOHelper.ConnName">
+            <summary>
+            webconfig 中的 配置名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.ADOHelper.ConnectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Data.PagedList`1.#ctor(System.Collections.Generic.List{`0},System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="list">链表</param>
+            <param name="intPageIndex">编号</param>
+            <param name="intPageSize">大小</param>
+        </member>
+        <member name="M:HotelCloud.Data.PagedList`1.GetPagedList(System.Collections.Generic.List{`0})">
+            <summary>
+            转为分页
+            </summary>
+            <param name="list">链表</param>
+        </member>
+        <member name="P:HotelCloud.Data.PagedList`1.PageIndex">
+            <summary>
+            分页编号
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.PagedList`1.PageSize">
+            <summary>
+            分页大小
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.PagedList`1.TotalCount">
+            <summary>
+            元素总共数目
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Data.PagedList`1.PageCount">
+            <summary>
+            页数
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Data.PagedListExpansion">
+            <summary>
+            返回分页数据
+            </summary>
+        </member>
+    </members>
+</doc>

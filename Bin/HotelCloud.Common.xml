@@ -1,0 +1,3453 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HotelCloud.Common</name>
+    </assembly>
+    <members>
+        <member name="T:HotelCloud.Common.PerfCounter">
+            <summary>
+            定时器
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.PerfCounter.#ctor(System.Boolean)">
+            <summary>
+            创建类的实例
+            </summary>
+            <param name="startTimer">是否立即执行Start()方法</param>
+        </member>
+        <member name="M:HotelCloud.Common.PerfCounter.Stop">
+            <summary>
+            停止计数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.PerfCounter.Start">
+            <summary>
+            开始计时
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.PerfCounter.Duration">
+            <summary>
+            返回运行时间
+            </summary>
+            <value>运行时间</value>
+        </member>
+        <member name="T:HotelCloud.Excet.Exception">
+            <summary>
+            自定义异常类。
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Excet.Error">
+            <summary>
+            自定义异常类。
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Arithmetic">
+            <summary>
+            CalUtility 的摘要说明
+            读算式辅助工具
+            </summary>
+        </member>
+        <!-- 对于成员“M:HotelCloud.Common.Arithmetic.ConvertExpression(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:HotelCloud.Common.Arithmetic.ConvertExpression(System.Collections.ArrayList,System.String,System.String)">
+            <summary>
+            对返回的表达式，已经分好放于ArrayList中的变量进行替换为实际常量
+            </summary>
+            <param name="alExpression"></param>
+            <param name="mapVar"></param>
+            <param name="mapValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.ConvertExpression(System.Collections.ArrayList,System.String[],System.String[])">
+            <summary>
+            对返回的表达式，已经分好放于ArrayList中的变量进行替换为实际常量
+            </summary>
+            <param name="alExpression"></param>
+            <param name="name"></param>
+            <param name="mapvalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.Find_First_RightBracket(System.Collections.ArrayList)">
+            <summary>
+            找出第一个闭括号
+            </summary>
+            <param name="alExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.Find_Near_LeftBracket(System.Collections.ArrayList,System.Int32)">
+            <summary>
+            找出匹配的开括号
+            </summary>
+            <param name="alExpression"></param>
+            <param name="iRightBracket"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.ConvertToPostfix(System.Collections.ArrayList)">
+            <summary>
+            中缀表达式转换为后缀表达式
+            </summary>
+            <param name="alexpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.ComputePostfix(System.Collections.ArrayList)">
+            <summary>
+            计算后缀表达式
+            </summary>
+            <param name="alexpression"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Arithmetic.ArrayListCopy">
+            <summary>
+            ArrayList子集操作
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.ArrayListCopy.CopyBewteenTo(System.Collections.ArrayList,System.Int32,System.Int32)">
+            <summary>
+            返回ArrayList子集{L--R}内容
+            </summary>
+            <param name="alist"></param>
+            <param name="iLeft"></param>
+            <param name="iRight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.ArrayListCopy.CopyNotBetweenTo(System.Collections.ArrayList,System.Int32,System.Int32)">
+            <summary>
+            返回ArrayList子集{L--R}的补集内容
+            </summary>
+            <param name="alist"></param>
+            <param name="iLeft"></param>
+            <param name="iRight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Arithmetic.ArrayListCopy.GetSubStringCount(System.String,System.String)">
+            <summary>
+            统计字符串sin在str中出现的次数
+            </summary>
+            <param name="str"></param>
+            <param name="sin"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Arithmetic.OperatorMap">
+            <summary>
+            算符的优先级实体
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Excet.ShowException">
+            <summary>
+            Exception 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Excet.ShowException.#ctor(System.String,System.String)">
+            <summary>      
+            异常触发过程
+            </summary>
+            <param name="message">显示的异常信息</param>
+            <param name="backUrl">显示完成后返回的url</param>
+        </member>
+        <member name="M:HotelCloud.Excet.ShowException.#ctor(System.String)">
+            <summary>
+            显示异常信息
+            </summary>
+            <param name="message">异常信息</param>
+        </member>
+        <member name="M:HotelCloud.Excet.ShowException.#ctor(System.String,System.Boolean)">
+            <summary>
+            显示异常，并关闭
+            </summary>
+            <param name="message">异常信息</param>
+            <param name="isClose">是否关闭</param>
+        </member>
+        <member name="T:HotelCloud.Common.Semaphore">
+            <summary>Implementation of Dijkstra's PV Semaphore based on the Monitor class.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.Semaphore._count">
+            <summary>The number of units alloted by this semaphore.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.Semaphore._semLock">
+            <summary>Lock for the semaphore.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.Semaphore.#ctor">
+            <summary> Initialize the semaphore as a binary semaphore.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.Semaphore.#ctor(System.Int32)">
+            <summary> Initialize the semaphore as a counting semaphore.</summary>
+            <param name="count">Initial number of threads that can take out units from this semaphore.</param>
+            <exception cref="T:System.ArgumentException">Throws if the count argument is less than 0.</exception>
+        </member>
+        <member name="M:HotelCloud.Common.Semaphore.AddOne">
+            <summary>V the semaphore (add 1 unit to it).</summary>
+        </member>
+        <member name="M:HotelCloud.Common.Semaphore.WaitOne">
+            <summary>P the semaphore (take out 1 unit from it).</summary>
+        </member>
+        <member name="M:HotelCloud.Common.Semaphore.P">
+            <summary>P the semaphore (take out 1 unit from it).</summary>
+        </member>
+        <member name="M:HotelCloud.Common.Semaphore.V">
+            <summary>V the semaphore (add 1 unit to it).</summary>
+        </member>
+        <member name="M:HotelCloud.Common.Semaphore.Reset(System.Int32)">
+            <summary>Resets the semaphore to the specified count.  Should be used cautiously.</summary>
+        </member>
+        <member name="T:HotelCloud.Common.ManagedThreadPool">
+            <summary>Managed thread pool.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool._maxWorkerThreads">
+            <summary>Maximum number of threads the thread pool has at its disposal.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool._waitingCallbacks">
+            <summary>Queue of all the callbacks waiting to be executed.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool._workerThreadNeeded">
+            <summary>
+            Used to signal that a worker thread is needed for processing.  Note that multiple
+            threads may be needed simultaneously and as such we use a semaphore instead of
+            an auto reset event.
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool._workerThreads">
+            <summary>List of all worker threads at the disposal of the thread pool.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool._inUseThreads">
+            <summary>Number of threads currently active.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool._poolLock">
+            <summary>Lockable object for the pool.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.ManagedThreadPool.#cctor">
+            <summary>Initialize the thread pool.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.ManagedThreadPool.Initialize">
+            <summary>Initializes the thread pool.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.ManagedThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)">
+            <summary>Queues a user work item to the thread pool.</summary>
+            <param name="callback">
+            A WaitCallback representing the delegate to invoke when the thread in the 
+            thread pool picks up the work item.
+            </param>
+        </member>
+        <member name="M:HotelCloud.Common.ManagedThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)">
+            <summary>Queues a user work item to the thread pool.</summary>
+            <param name="callback">
+            A WaitCallback representing the delegate to invoke when the thread in the 
+            thread pool picks up the work item.
+            </param>
+            <param name="state">
+            The object that is passed to the delegate when serviced from the thread pool.
+            </param>
+        </member>
+        <member name="M:HotelCloud.Common.ManagedThreadPool.Reset">
+            <summary>Empties the work queue of any queued work items.  Resets all threads in the pool.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.ManagedThreadPool.ProcessQueuedItems">
+            <summary>A thread worker function that processes items from the work queue.</summary>
+        </member>
+        <member name="P:HotelCloud.Common.ManagedThreadPool.MaxThreads">
+            <summary>Gets the number of threads at the disposal of the thread pool.</summary>
+        </member>
+        <member name="P:HotelCloud.Common.ManagedThreadPool.ActiveThreads">
+            <summary>Gets the number of currently active threads in the thread pool.</summary>
+        </member>
+        <member name="P:HotelCloud.Common.ManagedThreadPool.WaitingCallbacks">
+            <summary>Gets the number of callback delegates currently waiting in the thread pool.</summary>
+        </member>
+        <member name="T:HotelCloud.Common.ManagedThreadPool.WaitingCallback">
+            <summary>Used to hold a callback delegate and the state for that delegate.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool.WaitingCallback._callback">
+            <summary>Callback delegate for the callback.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.ManagedThreadPool.WaitingCallback._state">
+            <summary>State with which to call the callback delegate.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.ManagedThreadPool.WaitingCallback.#ctor(System.Threading.WaitCallback,System.Object)">
+            <summary>Initialize the callback holding object.</summary>
+            <param name="callback">Callback delegate for the callback.</param>
+            <param name="state">State with which to call the callback delegate.</param>
+        </member>
+        <member name="P:HotelCloud.Common.ManagedThreadPool.WaitingCallback.Callback">
+            <summary>Gets the callback delegate for the callback.</summary>
+        </member>
+        <member name="P:HotelCloud.Common.ManagedThreadPool.WaitingCallback.State">
+            <summary>Gets the state with which to call the callback delegate.</summary>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.SortedList`2">
+            <summary>
+            SortedList泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.IHCCollection`1.FixedSize">
+            <summary>
+            固定大小
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.IHCCollection`1.IsEmpty">
+            <summary>
+            集合类是否为空
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.IHCCollection`1.IsFull">
+            <summary>
+            集合类是否已满
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.IHCCollection`1.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.IHCCollection`1.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.SortedList`2.Add(`0,`1)">
+            <summary>
+            追加元素
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.SortedList`2.CompareTo(System.Object)">
+            <summary>
+            比较对象
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SortedList`2.IsEmpty">
+            <summary>
+            是否为空
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SortedList`2.FixedSize">
+            <summary>
+            固定大小属性
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SortedList`2.IsFull">
+            <summary>
+            是否已满
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SortedList`2.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SortedList`2.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SortedList`2.IsReadOnly">
+            <summary>
+            是否只读
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.XmlDocumentExtender">
+            <summary>
+            XmlDocument扩展类
+            
+            目的:用于优化和减少代码书写量
+            备注:Element  译为:元素  
+                 Document 译为:文档 
+                 Node     译为:节点
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.Load(System.String)">
+            <summary>
+            加载的文件名(含路径)
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.AppendChildElementByNameValue(System.Xml.XmlElement@,System.String,System.Object)">
+            <summary>
+            在指定的Xml元素下,添加子Xml元素
+            </summary>
+            <param name="xmlElement">被追加子元素的Xml元素</param>
+            <param name="childElementName">要添加的Xml元素名称</param>
+            <param name="childElementValue">要添加的Xml元素值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.AppendChildElementByNameValue(System.Xml.XmlElement@,System.String,System.Object,System.Boolean)">
+            <summary>
+            在指定的Xml元素下,添加子Xml元素
+            </summary>
+            <param name="xmlElement">被追加子元素的Xml元素</param>
+            <param name="childElementName">要添加的Xml元素名称</param>
+            <param name="childElementValue">要添加的Xml元素值</param>
+            <param name="IsCDataSection">是否是CDataSection类型的子元素</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.AppendChildElementByNameValue(System.Xml.XmlNode@,System.String,System.Object)">
+            <summary>
+            在指定的Xml结点下,添加子Xml元素
+            </summary>
+            <param name="xmlNode">被追加子元素的Xml节点</param>
+            <param name="childElementName">要添加的Xml元素名称</param>
+            <param name="childElementValue">要添加的Xml元素值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.AppendChildElementByNameValue(System.Xml.XmlNode@,System.String,System.Object,System.Boolean)">
+            <summary>
+            在指定的Xml结点下,添加子Xml元素
+            </summary>
+            <param name="xmlNode">被追加子元素的Xml节点</param>
+            <param name="childElementName">要添加的Xml元素名称</param>
+            <param name="childElementValue">要添加的Xml元素值</param>
+            <param name="IsCDataSection">是否是CDataSection类型的子元素</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.AppendChildElementByDataRow(System.Xml.XmlElement@,System.Data.DataColumnCollection,System.Data.DataRow)">
+            <summary>
+            通过数据行向当前XML元素下追加子元素
+            </summary>
+            <param name="xmlElement">被追加子元素的Xml元素</param>
+            <param name="dcc">当前数据表中的列集合</param>
+            <param name="dr">当前行数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.AppendChildElementByDataRow(System.Xml.XmlElement@,System.Data.DataColumnCollection,System.Data.DataRow,System.String)">
+            <summary>
+            通过数据行向当前XML元素下追加子元素
+            </summary>
+            <param name="xmlElement">被追加子元素的Xml元素</param>
+            <param name="dcc">当前数据表中的列集合</param>
+            <param name="dr">当前行数据</param>
+            <param name="removecols">不会被追加的列名</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.InitializeNode(System.String)">
+            <summary>
+            实始化节点, 当节点存在则清除当前路径下的所有子结点, 如不存在则直接创建该结点
+            </summary>
+            <param name="xmlpath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.RemoveNodeAndChildNode(System.String)">
+            <summary>
+            删除指定路径下面的所有子结点和自身
+            </summary>
+            <param name="xmlpath">指定路径</param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.CreateNode(System.String)">
+            <summary>
+            创建指定路径下的节点
+            </summary>
+            <param name="xmlpath">节点路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.GetSingleNodeValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            得到指定路径的节点值
+            </summary>
+            <param name="xmlnode">要查找节点</param>
+            <param name="path">指定路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDocumentExtender.FiltrateControlCharacter(System.String)">
+            <summary>
+            过滤控制字符,包括0x00 - 0x08,0x0b - 0x0c,0x0e - 0x1f
+            </summary>
+            <param name="content">要过滤的内容</param>
+            <returns>过滤后的内容</returns>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.InvalidXmlException">
+            <summary>
+            xml错误定义
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Utils">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetRegexCompiledOptions">
+            <summary>
+            得到正则编译参数设置
+            </summary>
+            <returns>参数设置</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetStringLength(System.String)">
+            <summary>
+            返回字符串真实长度, 1个汉字长度为2
+            </summary>
+            <returns>字符长度</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetInArrayID(System.String,System.String[],System.Boolean)">
+            <summary>
+            判断指定字符串在指定字符串数组中的位置
+            </summary>
+            <param name="strSearch">字符串</param>
+            <param name="stringArray">字符串数组</param>
+            <param name="caseInsensetive">是否不区分大小写, true为不区分, false为区分</param>
+            <returns>字符串在指定字符串数组中的位置, 如不存在则返回-1</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetInArrayID(System.String,System.String[])">
+            <summary>
+            判断指定字符串在指定字符串数组中的位置
+            </summary>
+            <param name="strSearch">字符串</param>
+            <param name="stringArray">字符串数组</param>
+            <returns>字符串在指定字符串数组中的位置, 如不存在则返回-1</returns>		
+        </member>
+        <member name="M:HotelCloud.Common.Utils.InArray(System.String,System.String[],System.Boolean)">
+            <summary>
+            判断指定字符串是否属于指定字符串数组中的一个元素
+            </summary>
+            <param name="strSearch">字符串</param>
+            <param name="stringArray">字符串数组</param>
+            <param name="caseInsensetive">是否不区分大小写, true为不区分, false为区分</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.InArray(System.String,System.String[])">
+            <summary>
+            判断指定字符串是否属于指定字符串数组中的一个元素
+            </summary>
+            <param name="str">字符串</param>
+            <param name="stringarray">字符串数组</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.InArray(System.String,System.String)">
+            <summary>
+            判断指定字符串是否属于指定字符串数组中的一个元素
+            </summary>
+            <param name="str">字符串</param>
+            <param name="stringarray">内部以逗号分割单词的字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.InArray(System.String,System.String,System.String)">
+            <summary>
+            判断指定字符串是否属于指定字符串数组中的一个元素
+            </summary>
+            <param name="str">字符串</param>
+            <param name="stringarray">内部以逗号分割单词的字符串</param>
+            <param name="strsplit">分割字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.InArray(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            判断指定字符串是否属于指定字符串数组中的一个元素
+            </summary>
+            <param name="str">字符串</param>
+            <param name="stringarray">内部以逗号分割单词的字符串</param>
+            <param name="strsplit">分割字符串</param>
+            <param name="caseInsensetive">是否不区分大小写, true为不区分, false为区分</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.RTrim(System.String)">
+            <summary>
+            删除字符串尾部的回车/换行/空格
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ClearBR(System.String)">
+            <summary>
+            清除给定字符串中的回车及换行符
+            </summary>
+            <param name="str">要清除的字符串</param>
+            <returns>清除后返回的字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.CutString(System.String,System.Int32,System.Int32)">
+            <summary>
+            从字符串的指定位置截取指定长度的子字符串
+            </summary>
+            <param name="str">原字符串</param>
+            <param name="startIndex">子字符串的起始位置</param>
+            <param name="length">子字符串的长度</param>
+            <returns>子字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.CutString(System.String,System.Int32)">
+            <summary>
+            从字符串的指定位置开始截取到字符串结尾的了符串
+            </summary>
+            <param name="str">原字符串</param>
+            <param name="startIndex">子字符串的起始位置</param>
+            <returns>子字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetMapPath(System.String)">
+            <summary>
+            获得当前绝对路径
+            </summary>
+            <param name="strPath">指定的路径</param>
+            <returns>绝对路径</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.FileExists(System.String)">
+            <summary>
+            返回文件是否存在
+            </summary>
+            <param name="filename">文件名</param>
+            <returns>是否存在</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ResponseFile(System.String,System.String,System.String)">
+            <summary>
+            以指定的ContentType输出指定文件文件
+            </summary>
+            <param name="filepath">文件路径</param>
+            <param name="filename">输出的文件名</param>
+            <param name="filetype">将文件输出时设置的ContentType</param>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsImgFilename(System.String)">
+            <summary>
+            判断文件名是否为浏览器可以直接显示的图片文件名
+            </summary>
+            <param name="filename">文件名</param>
+            <returns>是否可以直接显示</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IntToStr(System.Int32)">
+            <summary>
+            int型转换为string型
+            </summary>
+            <returns>转换后的string类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.MD5(System.String)">
+            <summary>
+            MD5函数
+            </summary>
+            <param name="str">原始字符串</param>
+            <returns>MD5结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.SHA256(System.String)">
+            <summary>
+            SHA256函数
+            </summary>
+            /// <param name="str">原始字符串</param>
+            <returns>SHA256结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetSubString(System.String,System.Int32,System.String)">
+            <summary>
+            字符串如果操过指定长度则将超出的部分用指定字符串代替
+            </summary>
+            <param name="p_SrcString">要检查的字符串</param>
+            <param name="p_Length">指定长度</param>
+            <param name="p_TailString">用于替换的字符串</param>
+            <returns>截取后的字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetSubString(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            取指定长度的字符串
+            </summary>
+            <param name="p_SrcString">要检查的字符串</param>
+            <param name="p_StartIndex">起始位置</param>
+            <param name="p_Length">指定长度</param>
+            <param name="p_TailString">用于替换的字符串</param>
+            <returns>截取后的字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ReplaceString(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            自定义的替换字符串函数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetSpacesString(System.Int32)">
+            <summary>
+            生成指定数量的html空格符号
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsValidEmail(System.String)">
+            <summary>
+            检测是否符合email格式
+            </summary>
+            <param name="strEmail">要判断的email字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsURL(System.String)">
+            <summary>
+            检测是否是正确的Url
+            </summary>
+            <param name="strUrl">要验证的Url</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsBase64String(System.String)">
+            <summary>
+            判断是否为base64字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsSafeSqlString(System.String)">
+            <summary>
+            检测是否有Sql危险字符
+            </summary>
+            <param name="str">要判断字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsSafeUserInfoString(System.String)">
+            <summary>
+            检测是否有危险的可能用于链接的字符串
+            </summary>
+            <param name="str">要判断字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.CleanInput(System.String)">
+            <summary>
+            清理字符串
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetFilename(System.String)">
+            <summary>
+            返回URL中结尾的文件名
+            </summary>		
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrFormat(System.String)">
+            <summary>
+            替换回车换行符为html换行符
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetDate">
+            <summary>
+            返回标准日期格式string
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetDate(System.String,System.String)">
+            <summary>
+            返回指定日期格式
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetTime">
+            <summary>
+            返回标准时间格式string
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetDateTime">
+            <summary>
+            返回标准时间格式string
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetDateTime(System.Int32)">
+            <summary>
+            返回相对于当前时间的相对天数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetDateTimeF">
+            <summary>
+            返回标准时间格式string
+            </summary>
+        </member>
+        <!-- 对于成员“M:HotelCloud.Common.Utils.GetStandardDateTime(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:HotelCloud.Common.Utils.GetStandardDateTime(System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:HotelCloud.Common.Utils.GetStandardDate(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:HotelCloud.Common.Utils.IsTime(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.mashSQL(System.String)">
+            <summary>
+            改正sql语句中的转义字符
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ChkSQL(System.String)">
+            <summary>
+            替换sql语句中的有问题符号
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.transHtml(System.String,System.String)">
+            <summary>
+            转换为静态html
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ToSChinese(System.String)">
+            <summary>
+            转换为简体中文
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ToTChinese(System.String)">
+            <summary>
+            转换为繁体中文
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.SplitString(System.String,System.String)">
+            <summary>
+            分割字符串
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.SplitString(System.String,System.String,System.Int32)">
+            <summary>
+            分割字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.PadStringArray(System.String[],System.Int32,System.Int32)">
+            <summary>
+            过滤字符串数组中每个元素为合适的大小
+            当长度小于minLength时，忽略掉,-1为不限制最小长度
+            当长度大于maxLength时，取其前maxLength位
+            如果数组中有null元素，会被忽略掉
+            </summary>
+            <param name="minLength">单个元素最小长度</param>
+            <param name="maxLength">单个元素最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.SplitString(System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            分割字符串
+            </summary>
+            <param name="strContent">被分割的字符串</param>
+            <param name="strSplit">分割符</param>
+            <param name="ignoreRepeatItem">忽略重复项</param>
+            <param name="maxElementLength">单个元素最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.SplitString(System.String,System.String,System.Boolean)">
+            <summary>
+            分割字符串
+            </summary>
+            <param name="strContent">被分割的字符串</param>
+            <param name="strSplit">分割符</param>
+            <param name="ignoreRepeatItem">忽略重复项</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.DistinctStringArray(System.String[],System.Int32)">
+            <summary>
+            清除字符串数组中的重复项
+            </summary>
+            <param name="strArray">字符串数组</param>
+            <param name="maxElementLength">字符串数组中单个元素的最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.DistinctStringArray(System.String[])">
+            <summary>
+            清除字符串数组中的重复项
+            </summary>
+            <param name="strArray">字符串数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.EncodeHtml(System.String)">
+            <summary>
+            替换html字符
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrFilter(System.String,System.String)">
+            <summary>
+            进行指定的替换(脏字过滤)
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetStaticPageNumbers(System.Int32,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            获得伪静态页码显示链接
+            </summary>
+            <param name="curPage">当前页数</param>
+            <param name="countPage">总页数</param>
+            <param name="url">超级链接地址</param>
+            <param name="extendPage">周边页码显示个数上限</param>
+            <returns>页码html</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetStaticPageNumbers(System.Int32,System.Int32,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获得伪静态页码显示链接
+            </summary>
+            <param name="curPage">当前页数</param>
+            <param name="countPage">总页数</param>
+            <param name="url">超级链接地址</param>
+            <param name="extendPage">周边页码显示个数上限</param>
+            <param name="forumrewrite">当前版块是否使用URL重写</param>
+            <returns>页码html</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetPostPageNumbers(System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            获得帖子的伪静态页码显示链接
+            </summary>
+            <param name="expname"></param>
+            <param name="countPage">总页数</param>
+            <param name="url">超级链接地址</param>
+            <param name="extendPage">周边页码显示个数上限</param>
+            <returns>页码html</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetPageNumbers(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            获得页码显示链接
+            </summary>
+            <param name="curPage">当前页数</param>
+            <param name="countPage">总页数</param>
+            <param name="url">超级链接地址</param>
+            <param name="extendPage">周边页码显示个数上限</param>
+            <returns>页码html</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetPageNumbers(System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            获得页码显示链接
+            </summary>
+            <param name="curPage">当前页数</param>
+            <param name="countPage">总页数</param>
+            <param name="url">超级链接地址</param>
+            <param name="extendPage">周边页码显示个数上限</param>
+            <param name="pagetag">页码标记</param>
+            <returns>页码html</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetPageNumbers(System.Int32,System.Int32,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            获得页码显示链接
+            </summary>
+            <param name="curPage">当前页数</param>
+            <param name="countPage">总页数</param>
+            <param name="url">超级链接地址</param>
+            <param name="extendPage">周边页码显示个数上限</param>
+            <param name="pagetag">页码标记</param>
+            <param name="anchor">锚点</param>
+            <returns>页码html</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.HtmlEncode(System.String)">
+            <summary>
+            返回 HTML 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>编码结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.HtmlDecode(System.String)">
+            <summary>
+            返回 HTML 字符串的解码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>解码结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.UrlEncode(System.String)">
+            <summary>
+            返回 URL 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>编码结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.UrlDecode(System.String)">
+            <summary>
+            返回 URL 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>解码结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.FindNoUTF8File(System.String)">
+            <summary>
+            返回指定目录下的非 UTF8 字符集文件
+            </summary>
+            <param name="Path">路径</param>
+            <returns>文件名的字符串数组</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsUTF8(System.IO.FileStream)">
+            <summary>
+            判断文件流是否为UTF8字符集
+            </summary>
+            <param name="sbInputStream">文件流</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.FormatBytesStr(System.Int32)">
+            <summary>
+            格式化字节数字符串
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.SafeInt32(System.Object)">
+            <summary>
+            将long型数值转换为Int32类型
+            </summary>
+            <param name="objNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrDateDiffSeconds(System.String,System.Int32)">
+            <summary>
+            返回相差的秒数
+            </summary>
+            <param name="Time"></param>
+            <param name="Sec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrDateDiffMinutes(System.String,System.Int32)">
+            <summary>
+            返回相差的分钟数
+            </summary>
+            <param name="time"></param>
+            <param name="minutes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrDateDiffHours(System.String,System.Int32)">
+            <summary>
+            返回相差的小时数
+            </summary>
+            <param name="time"></param>
+            <param name="hours"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.CreateDir(System.String)">
+            <summary>
+            建立文件夹
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ReplaceStrToScript(System.String)">
+            <summary>
+            为脚本替换特殊字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsIP(System.String)">
+            <summary>
+            是否为ip
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.InIPArray(System.String,System.String[])">
+            <summary>
+            返回指定IP是否在指定的IP数组所限定的范围内, IP数组内的IP地址可以使用*表示该IP段任意, 例如192.168.1.*
+            </summary>
+            <param name="ip"></param>
+            <param name="iparray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetAssemblyVersion">
+            <summary>
+            获得Assembly版本号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetAssemblyProductName">
+            <summary>
+            获得Assembly产品名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetAssemblyCopyright">
+            <summary>
+            获得Assembly产品版权
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.MakeSureDirectoryPathExists(System.String)">
+            <summary>
+            创建目录
+            </summary>
+            <param name="name">名称</param>
+            <returns>创建是否成功</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.WriteCookie(System.String,System.String)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="strName">名称</param>
+            <param name="strValue">值</param>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.WriteCookie(System.String,System.String,System.String)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="strName">名称</param>
+            <param name="strValue">值</param>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.WriteCookie(System.String,System.String,System.Int32)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="strName">名称</param>
+            <param name="strValue">值</param>
+            <param name="strValue">过期时间(分钟)</param>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetCookie(System.String)">
+            <summary>
+            读cookie值
+            </summary>
+            <param name="strName">名称</param>
+            <returns>cookie值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetCookie(System.String,System.String)">
+            <summary>
+            读cookie值
+            </summary>
+            <param name="strName">名称</param>
+            <returns>cookie值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetTrueForumPath">
+            <summary>
+            得到论坛的真实路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsDateString(System.String)">
+            <summary>
+            判断字符串是否是yy-mm-dd字符串
+            </summary>
+            <param name="str">待判断字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.RemoveHtml(System.String)">
+            <summary>
+            移除Html标记
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.RemoveUnsafeHtml(System.String)">
+            <summary>
+            过滤HTML中的不安全标签
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.RemoveFontTag(System.String)">
+            <summary>
+            将用户组Title中的font标签去掉
+            </summary>
+            <param name="title">用户组Title</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsNumeric(System.Object)">
+            <summary>
+            判断对象是否为Int32类型的数字
+            </summary>
+            <param name="Expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetTextFromHTML(System.String)">
+            <summary>
+            从HTML中获取文本,保留br,p,img
+            </summary>
+            <param name="HTML"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrToBool(System.Object,System.Boolean)">
+            <summary>
+            object型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrToBool(System.String,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrToInt(System.Object,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="expression">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrToInt(System.String,System.Int32)">
+            <summary>
+            将字符串转换为Int32类型
+            </summary>
+            <param name="expression">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrToFloat(System.Object,System.Single)">
+            <summary>
+            Object型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrToFloat(System.String,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsNumericArray(System.String[])">
+            <summary>
+            判断给定的字符串数组(strNumber)中的数据是不是都为数值型
+            </summary>
+            <param name="strNumber">要确认的字符串数组</param>
+            <returns>是则返加true 不是则返回 false</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsInt(System.String)">
+            <summary>
+            验证是否为正整数
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ClearLastChar(System.String)">
+            <summary>
+            删除最后一个字符
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.BackupFile(System.String,System.String,System.Boolean)">
+            <summary>
+            备份文件
+            </summary>
+            <param name="sourceFileName">源文件名</param>
+            <param name="destFileName">目标文件名</param>
+            <param name="overwrite">当目标文件存在时是否覆盖</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.BackupFile(System.String,System.String)">
+            <summary>
+            备份文件,当目标文件存在时覆盖
+            </summary>
+            <param name="sourceFileName">源文件名</param>
+            <param name="destFileName">目标文件名</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.RestoreFile(System.String,System.String,System.String)">
+            <summary>
+            恢复文件
+            </summary>
+            <param name="backupFileName">备份文件名</param>
+            <param name="targetFileName">要恢复的文件名</param>
+            <param name="backupTargetFileName">要恢复文件再次备份的名称,如果为null,则不再备份恢复文件</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetTemplateCookieName">
+            <summary>
+            获取记录模板id的cookie名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.SBCCaseToNumberic(System.String)">
+            <summary>
+            将全角数字转换为数字
+            </summary>
+            <param name="SBCCase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ToColor(System.String)">
+            <summary>
+            将字符串转换为Color
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ConvertSimpleFileName(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            转换长文件名为短文件名
+            </summary>
+            <param name="filename"></param>
+            <param name="repstring"></param>
+            <param name="leftnum"></param>
+            <param name="rightnum"></param>
+            <param name="charnum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.DataTableToJSON(System.Data.DataTable)">
+            <summary>
+            将数据表转换成JSON类型串
+            </summary>
+            <param name="dt">要转换的数据表</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.DataTableToJson(System.Data.DataTable,System.Boolean)">
+            <summary>
+            将数据表转换成JSON类型串
+            </summary>
+            <param name="dt">要转换的数据表</param>
+            <param name="dispose">数据表转换结束后是否dispose掉</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.StrIsNullOrEmpty(System.String)">
+            <summary>
+            字段串是否为Null或为""(空)
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.IsNumericList(System.String)">
+            <summary>
+            是否为数值串列表，各数值间用","间隔
+            </summary>
+            <param name="numList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.CheckColorValue(System.String)">
+            <summary>
+            检查颜色值是否为3/6位的合法颜色
+            </summary>
+            <param name="color">待检查的颜色</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetAjaxPageNumbers(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取ajax形式的分页链接
+            </summary>
+            <param name="curPage">当前页数</param>
+            <param name="countPage">总页数</param>
+            <param name="callback">回调函数</param>
+            <param name="extendPage">周边页码显示个数上限</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.GetSourceTextByUrl(System.String)">
+            <summary>
+            根据Url获得源文件内容
+            </summary>
+            <param name="url">合法的Url地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.ConvertToUnixTimestamp(System.DateTime)">
+            <summary>
+            转换时间为unix时间戳
+            </summary>
+            <param name="date">需要传递UTC时间,避免时区误差,例:DataTime.UTCNow</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.JsonCharFilter(System.String)">
+            <summary>
+            Json特符字符过滤，参见http://www.json.org/
+            </summary>
+            <param name="sourceStr">要过滤的源字符串</param>
+            <returns>返回过滤的字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.MergeString(System.String,System.String)">
+            <summary>
+            合并字符
+            </summary>
+            <param name="source">要合并的源字符串</param>
+            <param name="target">要被合并到的目的字符串</param>
+            <param name="mergechar">合并符</param>
+            <returns>合并到的目的字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.Utils.MergeString(System.String,System.String,System.String)">
+            <summary>
+            合并字符
+            </summary>
+            <param name="source">要合并的源字符串</param>
+            <param name="target">要被合并到的目的字符串</param>
+            <param name="mergechar">合并符</param>
+            <returns>并到字符串</returns>
+        </member>
+        <member name="P:HotelCloud.Common.Utils.Monthes">
+            <summary>
+            根据阿拉伯数字返回月份的名称(可更改为某种语言)
+            </summary>	
+        </member>
+        <member name="T:HotelCloud.Common.SerializationHelper">
+            <summary>
+            SerializationHelper 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.SerializationHelper.Load(System.Type,System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="type">对象类型</param>
+            <param name="filename">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.SerializationHelper.Save(System.Object,System.String)">
+            <summary>
+            序列化
+            </summary>
+            <param name="obj">对象</param>
+            <param name="filename">文件路径</param>
+        </member>
+        <member name="M:HotelCloud.Common.SerializationHelper.Serialize(System.Object)">
+            <summary>
+            xml序列化成字符串
+            </summary>
+            <param name="obj">对象</param>
+            <returns>xml字符串</returns>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.Deque`1">
+            <summary>
+            队列泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Deque`1.Accept(HotelCloud.Common.Generic.IHCVisitor{`0})">
+            <summary>
+            接受指定的访问方式(访问者模式)
+            </summary>
+            <param name="visitor"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Deque`1.Enqueue(`0)">
+            <summary>
+            追加元素
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Deque`1.CompareTo(System.Object)">
+            <summary>
+            比较对象
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Deque`1.System#Collections#Generic#ICollection{T}#Clear">
+            <summary>
+            队列泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Deque`1.System#Collections#Generic#ICollection{T}#Contains(`0)">
+            <summary>
+            队列泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Deque`1.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)">
+            <summary>
+            队列泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Deque`1.SyncRoot">
+            <summary>
+            返回当前实例
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Deque`1.IsEmpty">
+            <summary>
+            是否为空
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Deque`1.FixedSize">
+            <summary>
+            固定大小属性
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Deque`1.IsFull">
+            <summary>
+            当前队列是否已满
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Deque`1.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Deque`1.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Deque`1.IsReadOnly">
+            <summary>
+            是否只读
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.PageTemplate">
+            <summary>
+            Template为页面模板类.
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.PageTemplate.GetTemplate(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获得模板字符串. 首先查找缓存. 如果不在缓存中则从设置中的模板路径来读取模板文件.
+            模板文件的路径在Web.config文件中设置.
+            如果读取文件成功则会将内容放于缓存中.
+            </summary>
+            <param name="forumPath">模板路径</param>
+            <param name="skinName">模板名</param>
+            <param name="templateName">模板文件的文件名称, 也是缓存中的模板名称.</param>
+            <param name="nest">嵌套次数</param>
+            <param name="templateId">模板id</param>
+            <returns>string值,如果失败则为"",成功则为模板内容的string</returns>
+        </member>
+        <member name="M:HotelCloud.Common.PageTemplate.ConvertTags(System.Int32,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            转换标签
+            </summary>
+            <param name="nest">深度</param>
+            <param name="forumPath">模板路径</param>
+            <param name="skinName">模板名称</param>
+            <param name="inputStr">模板内容</param>
+            <param name="templateid">模板id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.PageTemplate.ReplaceSpecialTemplate(System.String,System.String,System.String)">
+            <summary>
+            解析特殊变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Img.ImageHelper">
+            <summary>
+            ImageHelper图片处理类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.SaveImage(System.Drawing.Image,System.Drawing.Imaging.ImageCodecInfo)">
+            <summary>
+            保存图片
+            </summary>
+            <param name="image">Image 对象</param>
+            <param name="ici">指定格式的编解码参数</param>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.GetCodecInfo(System.String)">
+            <summary>
+            获取图像编码解码器的所有相关信息
+            </summary>
+            <param name="mimeType">包含编码解码器的多用途网际邮件扩充协议 (MIME) 类型的字符串</param>
+            <returns>返回图像编码解码器的所有相关信息</returns>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.SetColor(System.Int32,System.Drawing.Color)">
+            <summary>
+            设置颜色
+            </summary>
+            <param name="alpha">透明度</param>
+            <param name="color">系统颜色</param>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.SetColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设置颜色
+            </summary>
+            <param name="red">红色分量值 0-255</param>
+            <param name="green">绿色分量值 0-255</param>
+            <param name="blue">蓝色分量值 0-255</param>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.SetColor(System.String)">
+            <summary>
+            设置颜色
+            </summary>
+            <param name="colorName">已命名颜色名称</param>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.MakeWatermarkFont(System.String)">
+            <summary>
+            制作水印文字
+            </summary>
+            <param name="text">显示的文字</param>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.MakeWatermarkImage(System.String)">
+            <summary>
+            制作水印图片
+            </summary>
+            <param name="watermarkImagePath">要绘制在上层的图片地址</param>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.GetFormat(System.String)">
+            <summary>
+            检查文件的格式
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.ValidateFile(System.String)">
+            <summary>
+            检查文件是否存在和文件名是否合法
+            </summary>
+            <param name="filepath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.ResizeImage(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            返回新图片尺寸
+            </summary>
+            <param name="width">原始宽</param>
+            <param name="height">原始高</param>
+            <param name="maxWidth">新图片最大宽</param>
+            <param name="maxHeight">新图片最大高</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Img.ImageHelper.MakeAlbumImages(System.Int32,System.Int32)">
+            <summary>
+            生成缩略图
+            </summary>
+            <param name="maxWidth">最大宽度</param>
+            <param name="maxHeight">最大高度</param>
+        </member>
+        <member name="P:HotelCloud.Img.ImageHelper.SourcePath">
+            <summary>
+            来源图片路径
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Img.ImageHelper.SavePath">
+            <summary>
+            图片保存路径
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Img.ImageHelper.Font">
+            <summary>
+            字体
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Img.ImageHelper.FontSize">
+            <summary>
+            文字尺寸
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Img.ImageHelper.Color">
+            <summary>
+            文字颜色
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.AES">
+            <summary> 
+            AES加密
+            </summary> 
+        </member>
+        <member name="M:HotelCloud.Common.AES.Encode(System.String,System.String)">
+            <summary>
+            DES加密字符串
+            </summary>
+            <param name="encryptString">待加密的字符串</param>
+            <param name="encryptKey">加密密钥,要求为8位</param>
+            <returns>加密成功返回加密后的字符串,失败返回源串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.AES.Decode(System.String,System.String)">
+            <summary>
+            DES解密字符串
+            </summary>
+            <param name="decryptString">待解密的字符串</param>
+            <param name="decryptKey">解密密钥,要求为8位,和加密密钥相同</param>
+            <returns>解密成功返回解密后的字符串,失败返源串</returns>
+        </member>
+        <member name="T:HotelCloud.Common.DES">
+            <summary> 
+            DES加密
+            </summary> 
+        </member>
+        <member name="M:HotelCloud.Common.DES.Encode(System.String,System.String)">
+            <summary>
+            DES加密字符串
+            </summary>
+            <param name="encryptString">待加密的字符串</param>
+            <param name="encryptKey">加密密钥,要求为8位</param>
+            <returns>加密成功返回加密后的字符串,失败返回源串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.DES.Decode(System.String,System.String)">
+            <summary>
+            DES解密字符串
+            </summary>
+            <param name="decryptString">待解密的字符串</param>
+            <param name="decryptKey">解密密钥,要求为8位,和加密密钥相同</param>
+            <returns>解密成功返回解密后的字符串,失败返源串</returns>
+        </member>
+        <member name="T:HotelCloud.Common.MD5">
+            <summary>
+            md5操作
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.MD5.getMD5(System.String)">
+            <summary>
+            返回md5加密后的字符串
+            </summary>
+            <param name="source">想加密的字符串</param>
+            <returns>进行md5加密后的字符串</returns>
+        </member>
+        <member name="T:HotelCloud.Common.FileHelper">
+            <summary>
+            FileHelper 文件操作。
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Common.FileHelper.dirPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.#ctor">
+            <summary>
+            初始化文件操作类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpFile(System.Web.UI.HtmlControls.HtmlInputFile)">
+            <summary>
+            上传文件，文件名不改变
+            </summary>
+            <param name="fl_Name">上传文件控件</param>
+            <returns>文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpFileRandom(System.Web.UI.HtmlControls.HtmlInputFile)">
+            <summary>
+            上传文件，文件名为随机数
+            </summary>
+            <param name="fl_Name">文件上传控件</param>
+            <returns>已上传文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpFileAsRandom(System.Web.UI.WebControls.FileUpload)">
+            <summary>
+            上传文件，文件名为随机数
+            </summary>
+            <param name="fl_Name">文件上传控件</param>
+            <returns>已上传文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpFileByName(System.Web.UI.WebControls.FileUpload,System.String)">
+            <summary>
+            上传文件，文件名指定
+            </summary>
+            <param name="fl_Name">文件上传控件</param>
+            <returns>已上传文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpImage(System.Web.UI.HtmlControls.HtmlInputFile)">
+            <summary>
+            上传图片格式文档，不改文件名
+            </summary>
+            <param name="fl_Name">文件上传控件</param>
+            <returns>已上传文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpImageRandom(System.Web.UI.HtmlControls.HtmlInputFile)">
+            <summary>
+            上传图片格式文档，文件名为随机数
+            </summary>
+            <param name="fl_Name">文件上传控件</param>
+            <returns>已上传文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpImageByFileName(System.Web.UI.HtmlControls.HtmlInputFile)">
+            <summary>
+            上传图片格式文档，文件名为随机数
+            </summary>
+            <param name="fl_Name">文件上传控件</param>
+            <returns>已上传文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.UpADImage(System.Web.UI.WebControls.FileUpload)">
+            <summary>
+            上传图片格式文档，文件名为随机数
+            </summary>
+            <param name="fl_Name">文件上传控件</param>
+            <returns>已上传文件名</returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.DelFolder(System.String)">
+            <summary>
+            强制删除一个存在文件的文件夹
+            </summary>
+            <param name="strDir">文件夹相对路径,比如:~/downloads/</param>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.DelFolder(System.String,System.Boolean)">
+            <summary>
+            删除文件夹
+            </summary>
+            <param name="strDir">相对目录</param>
+            <param name="isDelSub">存在子文件夹是否删除</param>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.AddFolder(System.String)">
+            <summary>
+            增加一个文件夹-如果存在将停止，并返回是否已创建
+            </summary>
+            <param name="strDir">文件夹相对路径,比如:~/downloads/</param>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.AddFolderForce(System.String)">
+            <summary>
+            强制创建文件夹--如果存在将覆盖一个存在文件的文件夹
+            </summary>
+            <param name="strDir">文件夹相对路径,比如:~/downloads/wufeng/</param>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.DelFile(System.String)">
+            <summary>
+            删除一个文件--返回删除信息
+            </summary>
+            <param name="strPath">文件夹相对路径,比如:~/downloads/wufeng/aaa.aspx</param>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.DelFileExe(System.String)">
+            <summary>
+            删除一个文件--返回删除信息
+            </summary>
+            <param name="strPath">文件夹相对路径,比如:~/downloads/wufeng/aaa.aspx</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.GetFileText(System.String,System.String)">
+            <summary>
+            以二进制读取文件-返回文本
+            </summary>
+            <param name="strPath">文件夹相对路径,比如:downloads/wufeng/aaa.aspx</param>
+            <param name="strCode">读取编码，如GB2312,utf-8</param>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.SaveFileText(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            以二进制写入文件
+            </summary>
+            <param name="strPath">文件夹相对路径,比如:~/downloads/wufeng/aaa.aspx</param>
+            <param name="content">要写入的文本</param>
+            <param name="isAdd">是否追加文本，false为重新创建</param>
+            <param name="strCode">写入编码，如GB2312,utf-8</param>
+        </member>
+        <member name="M:HotelCloud.Common.FileHelper.CheckFileExists(System.String)">
+            <summary>
+            检查文件是否存在
+            </summary>
+            <param name="filePath">相对路径 如~/images/aaa.jpg</param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.FileHelper.FileSize">
+            <summary>
+            文件尺寸 单位k
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.FileHelper.FileSizes">
+            <summary>
+            文件尺寸 单位k
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.FileHelper.FileLimited">
+            <summary>
+            文件尺寸 单位k
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.FileHelper.DirPath">
+            <summary>
+            上传路径目录
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.FileHelper.FileType">
+            <summary>
+            文件类型,如gif,jpg,bmp，空字符为不限制上传类型
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Email.IMailProvider">
+            <summary>
+            Summary description for IMailProvider.
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Img.Thumbnail">
+            <summary>
+            Thumbnail 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.SetImage(System.String)">
+            <summary>
+            创建
+            </summary>
+            <param name="FileName">原始图片路径</param>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.ThumbnailCallback">
+            <summary>
+            回调
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.GetImage(System.Int32,System.Int32)">
+            <summary>
+            生成缩略图,返回缩略图的Image对象
+            </summary>
+            <param name="Width">缩略图宽度</param>
+            <param name="Height">缩略图高度</param>
+            <returns>缩略图的Image对象</returns>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.SaveThumbnailImage(System.Int32,System.Int32)">
+            <summary>
+            保存缩略图
+            </summary>
+            <param name="Width"></param>
+            <param name="Height"></param>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.SaveImage(System.Int32,System.Int32,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            生成缩略图并保存
+            </summary>
+            <param name="Width">缩略图的宽度</param>
+            <param name="Height">缩略图的高度</param>
+            <param name="imgformat">保存的图像格式</param>
+            <returns>缩略图的Image对象</returns>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.SaveImage(System.Drawing.Image,System.String,System.Drawing.Imaging.ImageCodecInfo)">
+            <summary>
+            保存图片
+            </summary>
+            <param name="image">Image 对象</param>
+            <param name="savePath">保存路径</param>
+            <param name="ici">指定格式的编解码参数</param>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.GetCodecInfo(System.String)">
+            <summary>
+            获取图像编码解码器的所有相关信息
+            </summary>
+            <param name="mimeType">包含编码解码器的多用途网际邮件扩充协议 (MIME) 类型的字符串</param>
+            <returns>返回图像编码解码器的所有相关信息</returns>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.ResizeImage(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            计算新尺寸
+            </summary>
+            <param name="width">原始宽度</param>
+            <param name="height">原始高度</param>
+            <param name="maxWidth">最大新宽度</param>
+            <param name="maxHeight">最大新高度</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.GetFormat(System.String)">
+            <summary>
+            得到图片格式
+            </summary>
+            <param name="name">文件名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.MakeSquareImage(System.String,System.String,System.Int32)">
+            <summary>
+            制作小正方形
+            </summary>
+            <param name="fileName">原图的文件路径</param>
+            <param name="newFileName">新地址</param>
+            <param name="newSize">长度或宽度</param>
+        </member>
+        <member name="M:HotelCloud.Img.Thumbnail.MakeThumbnailImage(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            制作缩略图
+            </summary>
+            <param name="fileName">原图路径</param>
+            <param name="newFileName">新图路径</param>
+            <param name="maxWidth">最大宽度</param>
+            <param name="maxHeight">最大高度</param>
+        </member>
+        <member name="T:HotelCloud.Common.SmiliesInfo">
+            <summary>
+            SmiliesInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.SmiliesInfo.Id">
+            <summary>
+            Smilies的id
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.SmiliesInfo.Displayorder">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.SmiliesInfo.Type">
+            <summary>
+            类型,表情或主题图标
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.SmiliesInfo.Code">
+            <summary>
+            代码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.SmiliesInfo.Url">
+            <summary>
+            对应图片URL
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.HCRequest">
+            <summary>
+            Request操作类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.IsPost">
+            <summary>
+            判断当前页面是否接收到了Post请求
+            </summary>
+            <returns>是否接收到了Post请求</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.IsGet">
+            <summary>
+            判断当前页面是否接收到了Get请求
+            </summary>
+            <returns>是否接收到了Get请求</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetServerString(System.String)">
+            <summary>
+            返回指定的服务器变量信息
+            </summary>
+            <param name="strName">服务器变量名</param>
+            <returns>服务器变量信息</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetUrlReferrer">
+            <summary>
+            返回上一个页面的地址
+            </summary>
+            <returns>上一个页面的地址</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetCurrentFullHost">
+            <summary>
+            得到当前完整主机头
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetHost">
+            <summary>
+            得到主机头
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetRawUrl">
+            <summary>
+            获取当前请求的原始 URL(URL 中域信息之后的部分,包括查询字符串(如果存在))
+            </summary>
+            <returns>原始 URL</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.IsBrowserGet">
+            <summary>
+            判断当前访问是否来自浏览器软件
+            </summary>
+            <returns>当前访问是否来自浏览器软件</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.IsSearchEnginesGet">
+            <summary>
+            判断是否来自搜索引擎链接
+            </summary>
+            <returns>是否来自搜索引擎链接</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetUrl">
+            <summary>
+            获得当前完整Url地址
+            </summary>
+            <returns>当前完整Url地址</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetQueryString(System.String)">
+            <summary>
+            获得指定Url参数的值
+            </summary>
+            <param name="strName">Url参数</param>
+            <returns>Url参数的值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetQueryString(System.String,System.Boolean)">
+            <summary>
+            获得指定Url参数的值
+            </summary> 
+            <param name="strName">Url参数</param>
+            <param name="sqlSafeCheck">是否进行SQL安全检查</param>
+            <returns>Url参数的值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetPageName">
+            <summary>
+            获得当前页面的名称
+            </summary>
+            <returns>当前页面的名称</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetParamCount">
+            <summary>
+            返回表单或Url参数的总个数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetFormString(System.String)">
+            <summary>
+            获得指定表单参数的值
+            </summary>
+            <param name="strName">表单参数</param>
+            <returns>表单参数的值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetFormString(System.String,System.Boolean)">
+            <summary>
+            获得指定表单参数的值
+            </summary>
+            <param name="strName">表单参数</param>
+            <param name="sqlSafeCheck">是否进行SQL安全检查</param>
+            <returns>表单参数的值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetString(System.String)">
+            <summary>
+            获得Url或表单参数的值, 先判断Url参数是否为空字符串, 如为True则返回表单参数的值
+            </summary>
+            <param name="strName">参数</param>
+            <returns>Url或表单参数的值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetclearString(System.String,System.String)">
+            <summary>
+            要获取的字符
+            </summary>
+            <param name="strName">字符名称</param>
+            <param name="def">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.strclear(System.String)">
+            <summary>
+            过滤sql关键字
+            </summary>
+            <param name="values">要过滤的字符</param>
+            <returns>过滤后的字符</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetString(System.String,System.Boolean)">
+            <summary>
+            获得Url或表单参数的值, 先判断Url参数是否为空字符串, 如为True则返回表单参数的值
+            </summary>
+            <param name="strName">参数</param>
+            <param name="sqlSafeCheck">是否进行SQL安全检查</param>
+            <returns>Url或表单参数的值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetQueryInt(System.String,System.Int32)">
+            <summary>
+            获得指定Url参数的int类型值
+            </summary>
+            <param name="strName">Url参数</param>
+            <param name="defValue">缺省值</param>
+            <returns>Url参数的int类型值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetFormInt(System.String,System.Int32)">
+            <summary>
+            获得指定表单参数的int类型值
+            </summary>
+            <param name="strName">表单参数</param>
+            <param name="defValue">缺省值</param>
+            <returns>表单参数的int类型值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetInt(System.String,System.Int32)">
+            <summary>
+            获得指定Url或表单参数的int类型值, 先判断Url参数是否为缺省值, 如为True则返回表单参数的值
+            </summary>
+            <param name="strName">Url或表单参数</param>
+            <param name="defValue">缺省值</param>
+            <returns>Url或表单参数的int类型值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetQueryFloat(System.String,System.Single)">
+            <summary>
+            获得指定Url参数的float类型值
+            </summary>
+            <param name="strName">Url参数</param>
+            <param name="defValue">缺省值</param>
+            <returns>Url参数的int类型值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetFormFloat(System.String,System.Single)">
+            <summary>
+            获得指定表单参数的float类型值
+            </summary>
+            <param name="strName">表单参数</param>
+            <param name="defValue">缺省值</param>
+            <returns>表单参数的float类型值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetFloat(System.String,System.Single)">
+            <summary>
+            获得指定Url或表单参数的float类型值, 先判断Url参数是否为缺省值, 如为True则返回表单参数的值
+            </summary>
+            <param name="strName">Url或表单参数</param>
+            <param name="defValue">缺省值</param>
+            <returns>Url或表单参数的int类型值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.GetIP">
+            <summary>
+            获得当前页面客户端的IP
+            </summary>
+            <returns>当前页面客户端的IP</returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.SaveRequestFile(System.String)">
+            <summary>
+            保存用户上传的文件
+            </summary>
+            <param name="path">保存路径</param>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.getRequest(System.String)">
+            <summary>
+            获取url参数
+            </summary>
+            <param name="requestname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.getDate(System.String)">
+            <summary>
+            获取日期参数
+            </summary>
+            <param name="requestname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.getBool(System.String)">
+            <summary>
+            获取字节参数
+            </summary>
+            <param name="requestname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.IsGet(System.String)">
+            <summary>
+            是否有该参数传递
+            </summary>
+            <param name="requestname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.getInt(System.String)">
+            <summary>
+            获取整数参数
+            </summary>
+            <param name="requestname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.getLong(System.String)">
+            <summary>
+            获取整数参数
+            </summary>
+            <param name="requestname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.HCRequest.getID">
+            <summary>
+            获取id参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.HCRequest.ID">
+            <summary>
+            获取id参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.HCRequest.Hid">
+            <summary>
+            获取酒店id参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.HCRequest.Cid">
+            <summary>
+            获取酒店cid参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Log.SysLog">
+            <summary>
+            系统日志类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Log.SysLog.WriteLog(System.Exception,System.String)">
+            <summary>
+            写入错误信息
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:HotelCloud.Log.SysLog.WriteLog(System.String,System.String)">
+            <summary>
+            写入错误信息
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="T:HotelCloud.Format.UrlFormats">
+             <summary>
+            统一在这里生成url地址
+             </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlDatasetConvert.CDataToXml(System.Data.DataTable)">
+            
+            <summary>
+            将DataTable对象转换成XML字符串
+            </summary>
+            <param name="dt">DataTable对象</param>
+            <returns>XML字符串</returns>
+        </member>
+        <member name="T:HotelCloud.Common.TypeParse">
+            <summary>
+            关于类型转换及判断的工具类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.IsNumeric(System.Object)">
+            <summary>
+            判断对象是否为Int32类型的数字
+            </summary>
+            <param name="Expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.IsNumeric(System.String)">
+            <summary>
+            判断对象是否为Int32类型的数字
+            </summary>
+            <param name="Expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.IsDouble(System.Object)">
+            <summary>
+            是否为Double类型
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.StrToBool(System.Object,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.StrToBool(System.String,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.StrToInt(System.Object,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.StrToInt(System.String,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="str">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.StrToFloat(System.Object,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.StrToFloat(System.String,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeParse.IsNumericArray(System.String[])">
+            <summary>
+            判断给定的字符串数组(strNumber)中的数据是不是都为数值型
+            </summary>
+            <param name="strNumber">要确认的字符串数组</param>
+            <returns>是则返加true 不是则返回 false</returns>
+        </member>
+        <member name="T:HotelCloud.Common.StringHelper">
+            <summary>
+            进行字符串操作，包括查找，替换，去除html，输出js等
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.#ctor">
+            <summary>
+            字符处理公共类构造方法
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.outputJS(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            输出js
+            </summary>
+            <param name="str_js_Content"></param>
+            <param name="lbl_Error"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.outputJS(System.String)">
+            <summary>
+            输出js
+            </summary>
+            <param name="str_js_Content"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.outputJSAlert(System.String)">
+            <summary>
+            输出js提示脚本
+            </summary>
+            <param name="str_js_Content">提醒内容</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.PrintoutJSAlert(System.String)">
+            <summary>
+            直接输出js提醒
+            </summary>
+            <param name="str_js_Content">提醒内容</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.PrintoutJS(System.String)">
+            <summary>
+            直接输出js
+            </summary>
+            <param name="str_js_Content"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsIsNull(System.String,System.String,System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            出错时弹出提示对话框
+            </summary>
+            <param name="str_Control_Name">检验控件id值</param>
+            <param name="str_Form_Name">表单id值</param>
+            <param name="str_Prompt">提示信息</param>
+            <param name="lbl_Error">Label控件id值</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsIsNull(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            出错时弹出提示对话框
+            </summary>
+            <param name="str_Prompt">提示信息</param>
+            <param name="lbl_Error">Label控件id值</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JCloseParent(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            关闭对话框
+            </summary>
+            <param name="str_Prompt"></param>
+            <param name="lbl_Error"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JIsNull(System.String,System.Web.UI.WebControls.Label,System.Boolean)">
+            <summary>
+            出错时弹出提示对话框--关闭窗口
+            </summary>
+            <param name="str_Prompt">提示信息</param>
+            <param name="lbl_Error">Label控件id值</param>
+            <param name="isReLoad">true为上个窗口自动刷新</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JIsClose(System.String,System.Web.UI.WebControls.Label,System.Boolean)">
+             <summary>
+            是否关闭窗口
+             </summary>
+             <param name="str_Prompt"></param>
+             <param name="lbl_Error"></param>
+             <param name="isClose"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JIsReLoad(System.String,System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            弹出信息并重装窗口
+            </summary>
+            <param name="str_Prompt">提示信息</param>
+            <param name="reLoadPath">重装路径</param>
+            <param name="lbl_Error">Label控件id值</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JRefreshParentWindow(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            刷新父窗口
+            </summary>
+            <param name="reLoadPath"></param>
+            <param name="lbl_Error"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JIsReLoad(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            重装窗口
+            </summary>
+            <param name="reLoadPath"></param>
+            <param name="lbl_Error"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.CloseParent(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            关闭对话框
+            </summary>
+            <param name="str_Prompt"></param>
+            <param name="lbl_Error"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsIsNull(System.String,System.Web.UI.WebControls.Label,System.Boolean)">
+            <summary>
+            出错时弹出提示对话框--关闭窗口
+            </summary>
+            <param name="str_Prompt">提示信息</param>
+            <param name="lbl_Error">Label控件id值</param>
+            <param name="isReLoad">true为上个窗口自动刷新</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsIsClose(System.String,System.Web.UI.WebControls.Label,System.Boolean)">
+             <summary>
+            是否关闭窗口
+             </summary>
+             <param name="str_Prompt">提示信息</param>
+             <param name="lbl_Error">控件名称</param>
+             <param name="isClose">是否关闭窗口</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsIsClose(System.String,System.Web.UI.WebControls.Label,System.Boolean,System.Int32)">
+             <summary>
+            是否关闭窗口
+             </summary>
+             <param name="str_Prompt">提示信息</param>
+             <param name="lbl_Error">控件名称</param>
+             <param name="isClose">是否关闭窗口</param>
+             <param name="win">关闭哪个窗口</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsIsReLoad(System.String,System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            弹出信息并重装窗口
+            </summary>
+            <param name="str_Prompt">提示信息</param>
+            <param name="reLoadPath">重装路径</param>
+            <param name="lbl_Error">Label控件id值</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsRefreshParentWindow(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            刷新父窗口
+            </summary>
+            <param name="reLoadPath"></param>
+            <param name="lbl_Error"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.JsIsReLoad(System.String,System.Web.UI.WebControls.Label)">
+            <summary>
+            重装窗口
+            </summary>
+            <param name="reLoadPath"></param>
+            <param name="lbl_Error"></param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetDataRandom">
+            <summary>
+            获得一个16位时间随机数
+            </summary>
+            <returns>返回随机数</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetStrCount(System.String,System.String)">
+            <summary>
+             获得某个字符串在另个字符串中出现的次数
+            </summary>
+            <param name="strOriginal">要处理的字符</param>
+            <param name="strSymbol">符号</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetFirstStr(System.String,System.String)">
+            <summary>
+            获得某个字符串在另个字符串第一次出现时前面所有字符
+            </summary>
+            <param name="strOriginal">要处理的字符</param>
+            <param name="strSymbol">符号</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetLastStr(System.String,System.String)">
+            <summary>
+            获得某个字符串在另个字符串最后一次出现时后面所有字符
+            </summary>
+            <param name="strOriginal">要处理的字符</param>
+            <param name="strSymbol">符号</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetTwoMiddleFirstStr(System.String,System.String,System.String)">
+            <summary>
+            获得两个字符之间第一次出现时前面所有字符
+            </summary>
+            <param name="strOriginal">要处理的字符</param>
+            <param name="strFirst">最前哪个字符</param>
+            <param name="strLast">最后哪个字符</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetTwoMiddleLastStr(System.String,System.String,System.String)">
+            <summary>
+             获得两个字符之间最后一次出现时的所有字符
+            </summary>
+            <param name="strOriginal">要处理的字符</param>
+            <param name="strFirst">最前哪个字符</param>
+            <param name="strLast">最后哪个字符</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetHtmlFormat(System.String)">
+            <summary>
+            从数据库表读记录时,能正常显示
+            </summary>
+            <param name="strContent">要处理的字符</param>
+            <returns>返回正常值</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetCheckStr(System.String,System.String,System.String)">
+            <summary>
+            检查相等之后，获得字符串
+            </summary>
+            <param name="str">字符串1</param>
+            <param name="checkStr">字符串2</param>
+            <param name="reStr">相等之后要返回的字符串</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetCheckStr(System.Int32,System.Int32,System.String)">
+            <summary>
+            检查相等之后，获得字符串
+            </summary>
+            <param name="str">数值1</param>
+            <param name="checkStr">数值2</param>
+            <param name="reStr">相等之后要返回的字符串</param>
+            <returns>返回字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetCheckStr(System.Boolean,System.Boolean,System.String)">
+            <summary>
+            检查相等之后，获得字符串
+            </summary>
+            <param name="str"></param>
+            <param name="checkStr"></param>
+            <param name="reStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetCheckStr(System.Object,System.Object,System.String)">
+            <summary>
+            检查相等之后，获得字符串
+            </summary>
+            <param name="str"></param>
+            <param name="checkStr"></param>
+            <param name="reStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetLeftStr(System.String,System.Int32,System.String)">
+            <summary>
+            截取左边规定字数字符串
+            </summary>
+            <param name="str">需截取字符串</param>
+            <param name="length">截取字数</param>
+            <param name="endStr">超过字数，结束字符串，如"..."</param>
+            <returns>返回截取字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetLeftStr(System.String,System.Int32)">
+            <summary>
+            截取左边规定字数字符串
+            </summary>
+            <param name="str">需截取字符串</param>
+            <param name="length">截取字数</param>
+            <returns>返回截取字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetStrLength(System.String)">
+            <summary>
+            获得双字节字符串的字节数
+            </summary>
+            <param name="str">要检测的字符串</param>
+            <returns>返回字节数</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.Html2Img(System.String)">
+            <summary>
+            取得html代码中的第一幅图片
+            </summary>
+            <param name="html"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.Html2TextImg(System.String,System.Int32)">
+            <summary>
+            去除html代码提取一幅图片到顶部，并固定字数
+            </summary>
+            <param name="html"></param>
+            <param name="qty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.Html2Text(System.String,System.Int32)">
+            <summary>
+            去除html代码，保留img
+            </summary>
+            <param name="html"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.Html2Text(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="html"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.Html2Text2(System.String)">
+            
+            <param name="html">HTML字符串</param>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.RegStripHtml(System.String)">
+            <summary>
+            剥去HTML标签
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.RegStripHtml(System.String,System.String[])">
+            <summary>
+            转换HTML与相对去处相对标签 未测试
+            </summary>
+            <param name="text"></param>
+            <param name="ReLabel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.ReplaceHtml(System.String)">
+            <summary>
+            使Html失效,以文本显示
+            </summary>
+            <param name="str">原字符串</param>
+            <returns>失效后字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.GetRandomNext(System.Int32)">
+            <summary>
+            获得随机数字
+            </summary>
+            <param name="Length">随机数字的长度</param>
+            <returns>返回长度为 Length 的　<see cref="T:System.Int32"/> 类型的随机数</returns>
+            <example>
+            Length 不能大于9,以下为示例演示了如何调用 GetRandomNext：<br/>
+            <code>
+            	int le = GetRandomNext(8);
+            </code>
+            </example>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.isNumber(System.Object)">
+            <summary>
+            返回一个 bool 值，指明提供的值是不是整数
+            </summary>
+            <param name="obj">要判断的值</param>
+            <returns>true[是整数]false[不是整数]</returns>
+            <remarks>
+            	isNumber　只能判断正(负)整数，如果 obj 为小数则返回 false;
+            </remarks>
+            <example>
+            下面的示例演示了判断 obj 是不是整数：<br />
+            <code>
+            	bool flag;
+            	flag = isNumber("200");
+            </code>
+            </example>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.OutHighlightText(System.String,System.String,System.String)">
+            <summary>
+            高亮显示
+            </summary>
+            <param name="str">原字符串</param>
+            <param name="findstr">查找字符串</param>
+            <param name="cssclass">Style</param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.OutHtmlText(System.String)">
+            <summary>
+            去除html标签
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.OutHtmlText(System.String,System.Int32)">
+            <summary>
+            去除html标签,返回固定字数
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.ToHtmlText(System.String)">
+            <summary>
+            将html显示成文本
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.CutString(System.String,System.Int32)">
+            <summary>
+            截取字符串
+            </summary>
+            <param name="strInput">输入字符串</param>
+            <param name="intLen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.StringHelper.IfValue(System.Boolean,System.String,System.String)">
+            <summary>
+            根据条件返回值
+            </summary>
+            <param name="ifValue"></param>
+            <param name="trueValue"></param>
+            <param name="falseVale"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.Singleton`1">
+            <summary>
+            Singleton泛型类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Singleton`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Singleton`1.GetInstance">
+            <summary>
+            获取实例
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Singleton`1.SetInstance(`0)">
+            <summary>
+            设置实例
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.Dictionary`2">
+            <summary>
+            Dictionary泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Dictionary`2.Add(`0,`1)">
+            <summary>
+            追加元素
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.Dictionary`2.CompareTo(System.Object)">
+            <summary>
+            比较对象
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Dictionary`2.IsEmpty">
+            <summary>
+            是否为空
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Dictionary`2.FixedSize">
+            <summary>
+            固定大小属性
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Dictionary`2.IsFull">
+            <summary>
+            是否已满
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Dictionary`2.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Dictionary`2.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.Dictionary`2.IsReadOnly">
+            <summary>
+            是否只读
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.IXmlNodeVisitor">
+            <summary>
+            XmlNode访问器接口
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.IXmlNodeVisitor.SetNode(System.Xml.XmlNode)">
+            <summary>
+            设置当前访问器结点
+            </summary>
+            <param name="__xmlNode">当前要访问的节点信息</param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.IXmlNodeVisitor.GetNode(System.String)">
+            <summary>
+            返回当前访问器所用结点信息
+            </summary>
+            <param name="__nodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.IXmlNodeVisitor.Item(System.String)">
+            <summary>
+            索引器属性
+            </summary>
+            <param name="__nodeName">节点名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.XmlNodeAttributeValueVisitor">
+            <summary>
+            属性节点Value访问器类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlNodeAttributeValueVisitor.SetNode(System.Xml.XmlNode)">
+            <summary>
+            设置当前访问器结点
+            </summary>
+            <param name="__xmlNode">当前要访问的节点信息</param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlNodeAttributeValueVisitor.GetNode(System.String)">
+            <summary>
+            返回当前访问器所用结点信息
+            </summary>
+            <param name="__nodeName">节点名称</param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XmlNodeAttributeValueVisitor.Item(System.String)">
+            <summary>
+            定义索引器
+            </summary>
+            <param name="nodename"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.XmlNodeInnerTextVisitor">
+            <summary>
+            Select节点InnerText访问器类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlNodeInnerTextVisitor.SetNode(System.Xml.XmlNode)">
+            <summary>
+            设置当前访问器结点
+            </summary>
+            <param name="__xmlNode">当前要访问的节点信息</param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XmlNodeInnerTextVisitor.GetNode(System.String)">
+            <summary>
+            返回当前访问器所用结点信息
+            </summary>
+            <param name="__nodeName">节点名称</param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XmlNodeInnerTextVisitor.Item(System.String)">
+            <summary>
+            定义索引器
+            </summary>
+            <param name="nodename"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.List`1">
+            <summary>
+            列表泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.List`1.Add(`0)">
+            <summary>
+            追加元素
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.List`1.Accept(HotelCloud.Common.Generic.IHCVisitor{`0})">
+            <summary>
+            接受指定的访问方式(访问者模式)
+            </summary>
+            <param name="visitor"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.List`1.CompareTo(System.Object)">
+            <summary>
+            比较对象
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.List`1.IsEmpty">
+            <summary>
+            是否为空
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.List`1.FixedSize">
+            <summary>
+            固定大小属性
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.List`1.IsFull">
+            <summary>
+            是否已满
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.List`1.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.List`1.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.LinkedList`1">
+            <summary>
+            LinkedList泛型类
+            </summary>
+            <typeparam name="T">占位符(下同)</typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.LinkedList`1.Accept(HotelCloud.Common.Generic.IHCVisitor{`0})">
+            <summary>
+            接受指定的访问方式(访问者模式)
+            </summary>
+            <param name="visitor"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.LinkedList`1.CompareTo(System.Object)">
+            <summary>
+            比较对象
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.LinkedList`1.IsEmpty">
+            <summary>
+            是否为空
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.LinkedList`1.FixedSize">
+            <summary>
+            固定大小属性
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.LinkedList`1.IsFull">
+            <summary>
+            是否已满
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.LinkedList`1.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.LinkedList`1.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Email.SystemMail">
+            <summary>
+            Default implementation of the IMailProvider
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.ReadXML">
+            <summary>
+            ReadPlace 的摘要说明。
+            </summary>
+            
+        </member>
+        <member name="T:HotelCloud.Common.Xml.XMLComponent">
+            <summary>
+            XMLComponent 类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLComponent.WriteFile">
+            <summary>
+            写入文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLComponent.WriteStringBuilder">
+            <summary>
+            写入StringBuilder对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:HotelCloud.Common.Xml.XMLComponent.xmlDoc_Metone">
+            <summary>
+            文档对象
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLComponent.BulidXmlTree(System.Xml.XmlElement,System.String)">
+            <summary>
+            构XML树
+            </summary>
+            <param name="tempXmlElement"></param>
+            <param name="location"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLComponent.AppendChildElement(System.String,System.String,System.Xml.XmlElement,System.Xml.XmlDocument)">
+            <summary>
+            追加子节点
+            </summary>
+            <param name="strName">节点名字</param>
+            <param name="strInnerText">节点内容</param>
+            <param name="parentElement">父节点</param>
+            <param name="xmlDocument">XmlDocument对象</param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLComponent.AppendChildElement(System.String,System.String,System.Xml.XmlElement)">
+            <summary>
+            使用默认的Xml文档
+            </summary>
+            <param name="strName"></param>
+            <param name="strInnerText"></param>
+            <param name="parentElement"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLComponent.CreatePath">
+            <summary>
+            创建存储生成XML的文件夹
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.SourceDataTable">
+            <summary>
+            源数据表
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.FileOutPath">
+            <summary>
+            文件输出路径
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.FileEncode">
+            <summary>
+            文件编码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.Indentation">
+            <summary>
+            文件缩进
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.Version">
+            <summary>
+            版本信息
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.StartElement">
+            <summary>
+            开始元素
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.XslLink">
+            <summary>
+            XSL链接
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.ParentField">
+            <summary>
+            表中指向父记录的字段名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Xml.XMLComponent.Key">
+            <summary>
+            表中一个主键的值
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.ConcreteComponent">
+            <summary>
+            无递归直接生成XML
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.ConcreteComponent.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.ConcreteComponent.WriteStringBuilder">
+            <summary>
+            写入StringBuilder对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.ConcreteComponent.WriteFile">
+            <summary>
+            写入文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.TreeNodeComponent">
+            <summary>
+            无递归直接生成XML
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.TreeNodeComponent.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.TreeNodeComponent.WriteStringBuilder">
+            <summary>
+            写入StringBuilder对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.TreeNodeComponent.WriteFile">
+            <summary>
+            写入文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HotelCloud.Common.Xml.RssXMLComponent">
+            <summary>
+            RSS生成
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.RssXMLComponent.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.RssXMLComponent.WriteStringBuilder">
+            <summary>
+            写入StringBuilder对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.RssXMLComponent.WriteFile">
+            <summary>
+            写入文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLDecorator.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLDecorator.WriteFile">
+            <summary>
+            写入文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.Xml.XMLDecorator.WriteStringBuilder">
+            <summary>
+            写入StringBuilder对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeFinder.DefaultTypeFinder.#ctor">
+            <summary>Creates a new instance of the DefaultTypeFinder.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.TypeFinder.DefaultTypeFinder.Matches(System.String)">
+            <summary>
+            匹配程序集名称
+            </summary>
+            <param name="assemblyFullName">程序集名称</param>
+            <returns>是否匹配成功</returns>
+        </member>
+        <member name="M:HotelCloud.Common.TypeFinder.DefaultTypeFinder.Matches(System.String,System.String)">
+            <summary>
+            匹配程序集名称
+            </summary>
+            <param name="assemblyFullName">程序集名称</param>
+            <param name="pattern">匹配的正则条件</param>
+            <returns>是否匹配成功</returns>
+        </member>
+        <member name="P:HotelCloud.Common.TypeFinder.DefaultTypeFinder.AssembyNames">
+            <summary>程序集</summary>
+        </member>
+        <member name="P:HotelCloud.Common.TypeFinder.DefaultTypeFinder.AssemblySkipLoadingPattern">
+            <summary>跳过的程序集</summary>
+        </member>
+        <member name="P:HotelCloud.Common.TypeFinder.DefaultTypeFinder.SearchDirectoryPath">
+            <summary>
+            设置搜索程序集的文件目录
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.TypeFinder.DefaultTypeFinder.SearchPattern">
+            <summary>
+            设置搜索程序集的文件名范围
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.MySecurity">
+            <summary>
+            MySecurity 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.#ctor">
+            <summary>
+            初始化安全类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.SEncryptString(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="inputStr">输入字符串</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns>输出加密后字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.SEncryptString(System.String)">
+            <summary>
+            加密字符串 密钥为系统默认
+            </summary>
+            <param name="inputStr">输入字符串</param>
+            <returns>输出加密后字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.EncryptString(System.String,System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="inputStr">输入字符串</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns>输出加密后字符串</returns>
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.EncryptFile(System.String,System.String,System.String)">
+            <summary>
+            加密文件
+            </summary>
+            <param name="filePath">输入文件路径</param>
+            <param name="savePath">加密后输出文件路径</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns></returns>  
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.DecryptString(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="inputStr">要解密的字符串</param>
+            <param name="keyStr">密钥</param>
+            <returns>解密后的结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.DecryptFile(System.String,System.String,System.String)">
+            <summary>
+            解密文件
+            </summary>
+            <param name="filePath">输入文件路径</param>
+            <param name="savePath">解密后输出文件路径</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns></returns>    
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.SDecryptString(System.String,System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="inputStr">要解密的字符串</param>
+            <param name="keyStr">密钥</param>
+            <returns>解密后的结果</returns>
+        </member>
+        <member name="M:HotelCloud.Common.MySecurity.SDecryptString(System.String)">
+            <summary>
+             解密字符串 密钥为系统默认
+            </summary>
+            <param name="inputStr">要解密的字符串</param>
+            <returns>解密后的结果</returns>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.SumVisitor">
+            <summary>
+            累加数访问类
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.IHCVisitor`1.Visit(`0)">
+            <summary>
+            访问指定的对象
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.IHCVisitor`1.HasDone">
+            <summary>
+            是否已运行
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.SumVisitor.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.SumVisitor.Visit(System.Int32)">
+            <summary>
+            访问指定的对象
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SumVisitor.HasDone">
+            <summary>
+            是否已运行
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.SumVisitor.Sum">
+            <summary>
+            返加累加数
+            </summary>
+        </member>
+        <!-- 对于成员“T:HotelCloud.Common.Generic.CountVisitor`1”忽略有格式错误的 XML 注释 -->
+        <member name="M:HotelCloud.Common.Generic.CountVisitor`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.CountVisitor`1.Visit(`0)">
+            <summary>
+            访问指定的对象
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.CountVisitor`1.ResetCount">
+            <summary>
+            重设计数值
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.CountVisitor`1.HasDone">
+            <summary>
+            是否已运行
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.CountVisitor`1.Count">
+            <summary>
+            返回计数值
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.Generic.FindingVisitor`1">
+            <summary>
+            查找指定对象访问类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.FindingVisitor`1.#ctor(`0)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="searchobj"></param>
+        </member>
+        <member name="M:HotelCloud.Common.Generic.FindingVisitor`1.Visit(`0)">
+            <summary>
+            访问指定的对象
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.FindingVisitor`1.HasDone">
+            <summary>
+            是否已运行
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.FindingVisitor`1.Found">
+            <summary>
+            是否发现要查换的对象
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Common.Generic.FindingVisitor`1.SearchResult">
+            <summary>
+            返回查找到的对象
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.SysInfo">
+            <summary>
+            SysInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.GetCpuUsage">
+            <summary>
+            获得Cpu使用率
+            </summary>
+            <returns>返回使用率</returns>
+        </member>
+        <member name="T:HotelCloud.Common.SysInfo.CpuUsage">
+            <summary>
+            Defines an abstract base class for implementations of CPU usage counters.
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsage.Create">
+            <summary>
+            Creates and returns a CpuUsage instance that can be used to query the CPU time on this operating system.
+            </summary>
+            <returns>An instance of the CpuUsage class.</returns>
+            <exception cref="T:System.NotSupportedException">This platform is not supported -or- initialization of the CPUUsage object failed.</exception>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsage.Query">
+            <summary>
+            Determines the current average CPU load.
+            </summary>
+            <returns>An integer that holds the CPU load percentage.</returns>
+            <exception cref="T:System.NotSupportedException">One of the system calls fails. The CPU time can not be obtained.</exception>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsage.m_CpuUsage">
+            <summary>
+            Holds an instance of the CPUUsage class.
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Common.SysInfo.CpuUsage9x">
+            <summary>
+            Inherits the CPUUsage class and implements the Query method for Windows 9x systems.
+            </summary>
+            <remarks>
+            <p>This class works on Windows 98 and Windows Millenium Edition.</p>
+            <p>You should not use this class directly in your code. Use the CPUUsage.Create() method to instantiate a CPUUsage object.</p>
+            </remarks>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsage9x.#ctor">
+            <summary>
+            Initializes a new CPUUsage9x instance.
+            </summary>
+            <exception cref="T:System.NotSupportedException">One of the system calls fails.</exception>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsage9x.Query">
+            <summary>
+            Determines the current average CPU load.
+            </summary>
+            <returns>An integer that holds the CPU load percentage.</returns>
+            <exception cref="T:System.NotSupportedException">One of the system calls fails. The CPU time can not be obtained.</exception>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsage9x.Finalize">
+            <summary>
+            Closes the allocated resources.
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsage9x.m_StatData">
+            <summary>Holds the registry key that's used to read the CPU load.</summary>
+        </member>
+        <member name="T:HotelCloud.Common.SysInfo.CpuUsageNt">
+            <summary>
+            Inherits the CPUUsage class and implements the Query method for Windows NT systems.
+            </summary>
+            <remarks>
+            <p>This class works on Windows NT4, Windows 2000, Windows XP, Windows .NET Server and higher.</p>
+            <p>You should not use this class directly in your code. Use the CPUUsage.Create() method to instantiate a CPUUsage object.</p>
+            </remarks>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsageNt.SYSTEM_BASICINFORMATION">
+            <summary>Returns the number of processors in the system in a SYSTEM_BASIC_INFORMATION structure.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsageNt.SYSTEM_PERFORMANCEINFORMATION">
+            <summary>Returns an opaque SYSTEM_PERFORMANCE_INFORMATION structure.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsageNt.SYSTEM_TIMEINFORMATION">
+            <summary>Returns an opaque SYSTEM_TIMEOFDAY_INFORMATION structure.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsageNt.NO_ERROR">
+            <summary>The value returned by NtQuerySystemInformation is no error occurred.</summary>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsageNt.#ctor">
+            <summary>
+            Initializes a new CpuUsageNt instance.
+            </summary>
+            <exception cref="T:System.NotSupportedException">One of the system calls fails.</exception>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsageNt.Query">
+            <summary>
+            Determines the current average CPU load.
+            </summary>
+            <returns>An integer that holds the CPU load percentage.</returns>
+            <exception cref="T:System.NotSupportedException">One of the system calls fails. The CPU time can not be obtained.</exception>
+        </member>
+        <member name="M:HotelCloud.Common.SysInfo.CpuUsageNt.NtQuerySystemInformation(System.Int32,System.Byte[],System.Int32,System.IntPtr)">
+            <summary>
+            NtQuerySystemInformation is an internal Windows function that retrieves various kinds of system information.
+            </summary>
+            <param name="dwInfoType">One of the values enumerated in SYSTEM_INFORMATION_CLASS, indicating the kind of system information to be retrieved.</param>
+            <param name="lpStructure">Points to a buffer where the requested information is to be returned. The size and structure of this information varies depending on the value of the SystemInformationClass parameter.</param>
+            <param name="dwSize">Length of the buffer pointed to by the SystemInformation parameter.</param>
+            <param name="returnLength">Optional pointer to a location where the function writes the actual size of the information requested.</param>
+            <returns>Returns a success NTSTATUS if successful, and an NTSTATUS error code otherwise.</returns>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsageNt.oldIdleTime">
+            <summary>Holds the old idle time.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsageNt.oldSystemTime">
+            <summary>Holds the old system time.</summary>
+        </member>
+        <member name="F:HotelCloud.Common.SysInfo.CpuUsageNt.processorCount">
+            <summary>Holds the number of processors in the system.</summary>
+        </member>
+        <member name="T:HotelCloud.Common.WebCache">
+            <summary>
+            在iis应用程序cache中操作
+            </summary>
+        </member>
+    </members>
+</doc>

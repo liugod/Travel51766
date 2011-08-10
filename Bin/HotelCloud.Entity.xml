@@ -1,0 +1,2394 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HotelCloud.Entity</name>
+    </assembly>
+    <members>
+        <member name="M:HotelCloud.Entity._tonghang_dianping5.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._sub_info.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud._recreationAmenities.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Pub_Info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._my_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._MyHotel.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._huoche_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hospital.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._HelpArticle.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._goverment_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._FeedBackType.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._dingdan_state.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._ADManage.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._USER_QUESTION.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._USER_FUNCTION.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._traffic_position.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._subaround_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._roomAmenities.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._new_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._HotelTrafficAndAroundInformation.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hospital_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._generalAmenities.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._bus_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_school.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.SearchCacheInfo">
+            <summary>
+            搜索缓存信息描述类
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.SearchCacheInfo.Searchid">
+            <summary>
+            搜索序号
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.SearchCacheInfo.Keywords">
+            <summary>
+            搜索关键词
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.SearchCacheInfo.Searchstring">
+            <summary>
+            SQL查询语句
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.SearchCacheInfo.Ip">
+            <summary>
+            搜索者IP
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.SearchCacheInfo.Uid">
+            <summary>
+            搜索者id
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.SearchCacheInfo.Groupid">
+            <summary>
+            搜索者用户组
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.OverAll">
+            <summary>
+            OverAll 的摘要说明
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._tonghang_dianping.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._roomIndata.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._region_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._RatePlan.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._PayApply.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._member_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._login_elong.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._HotelDetail2.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._diningAmenities.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Client_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_traffic.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_building.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Account.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.EnumValue">
+            <summary>
+            EnumValue 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._user_jiucuo.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._TypeDic.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._traffic_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._TelCoupon.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._PlaceRoomDetails.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._jingdian_tpye.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._HotelLandMark.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hospital_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Coupon.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Contract.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._chain_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._bbs.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.AttachmentInfo">
+            <summary>
+            附件信息描述类
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Aid">
+            <summary>
+            附件aid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Uid">
+            <summary>
+            对应的帖子posterid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Tid">
+            <summary>
+            对应的评论tid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Pid">
+            <summary>
+            对应的帖子pid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Postdatetime">
+            <summary>
+            发布时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Readperm">
+            <summary>
+            所需阅读权限
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Filename">
+            <summary>
+            存储文件名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Filetype">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Filesize">
+            <summary>
+            文件尺寸
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Attachment">
+            <summary>
+            附件原始文件名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Downloads">
+            <summary>
+            下载次数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Attachprice">
+            <summary>
+            附件的售价
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Sys_index">
+            <summary>
+            非数据库字段,用来代替上传文件所对应上传组件(file)的Index
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachmentInfo.Sys_noupload">
+            <summary>
+            非数据库字段,用来存放未被上传的文件名
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._type_table.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._tonghang_dianping1.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._style_table.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._school_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._province_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._m_dianping.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._exam_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._college_ask.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._city_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._city_building.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._business_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.PhotoInfo">
+            <summary>
+            SpacePhotoInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._photoid">
+            <summary>
+            照片ID
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._albumid">
+            <summary>
+            相册ID
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._userid">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._filename">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._attachment">
+            <summary>
+            附件名
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._filesize">
+            <summary>
+            照片大小
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._description">
+            <summary>
+            照片介绍
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._postdate">
+            <summary>
+            照片上传时间
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._title">
+            <summary>
+            照片标题
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._views">
+            <summary>
+            照片查看此俗
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._commentstatus">
+            <summary>
+            照片评论状态
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._tagstatus">
+            <summary>
+            照片标签
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._comments">
+            <summary>
+            评论次数
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._username">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoInfo._isattachment">
+            <summary>
+            是否作为附件
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._view_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._subpic_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._school.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._room_time.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._restaurant.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._olympics_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._metro_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Member.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._map_info.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hotel_image.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._FeedBack.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._fankui_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._EL_cerft.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_restaurant.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_hospital.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._amenities.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._all_map_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._TuanProduct.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._ServiceComment.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Rate.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._member_emoney.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._fankui_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._economical_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._choiceness_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._BookingRule.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_goverment.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.VerifyImageInfo">
+            <summary>
+            验证码图片信息
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.VerifyImageInfo.Image">
+            <summary>
+            生成出的图片
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.VerifyImageInfo.ContentType">
+            <summary>
+            输出的图片类型，如 image/pjpeg
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.VerifyImageInfo.ImageFormat">
+            <summary>
+            图片的格式
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._VoteContent.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._USER_ANSWER.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._TuanSite.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._traffic_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._sub_dianping.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Pub_Agent.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._OrderCorrection.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._jdld.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._featureInfo.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._dianping_reply.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._counters.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._choiceness_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._cantonfair_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._ArticleType.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._ADPage.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.ShortUserInfo">
+            <summary>
+            简短的用户信息描述类
+            </summary>    
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Uid">
+            <summary>
+            用户UID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Username">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Spaceid">
+            <summary>
+            用户空间ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Secques">
+            <summary>
+            用户安全提问码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Adminid">
+            <summary>
+            管理组ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Groupid">
+            <summary>
+            用户组ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Groupexpiry">
+            <summary>
+            组过期时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extgroupids">
+            <summary>
+            扩展用户组
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Regip">
+            <summary>
+            注册IP
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Joindate">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Lastip">
+            <summary>
+            上次登录IP
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Lastvisit">
+            <summary>
+            上次访问时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Lastactivity">
+            <summary>
+            最后活动时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Lastpost">
+            <summary>
+            最后发贴时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Lastpostid">
+            <summary>
+            最后发贴id
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Lastposttitle">
+            <summary>
+            最后发贴标题
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Posts">
+            <summary>
+            发贴数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Digestposts">
+            <summary>
+            精华贴数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Oltime">
+            <summary>
+            在线时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Pageviews">
+            <summary>
+            页面浏览量
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Credits">
+            <summary>
+            积分数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits1">
+            <summary>
+            扩展积分1
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits2">
+            <summary>
+            扩展积分2
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits3">
+            <summary>
+            扩展积分3
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits4">
+            <summary>
+            扩展积分4
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits5">
+            <summary>
+            扩展积分5
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits6">
+            <summary>
+            扩展积分6
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits7">
+            <summary>
+            扩展积分7
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Extcredits8">
+            <summary>
+            扩展积分8
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Avatarshowid">
+            <summary>
+            头像ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Email">
+            <summary>
+            邮件地址
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Bday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Sigstatus">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Tpp">
+            <summary>
+            每页评论数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Ppp">
+            <summary>
+            每页贴数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Templateid">
+            <summary>
+            风格ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Pmsound">
+            <summary>
+            短消息铃声
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Showemail">
+            <summary>
+            是否显示邮箱
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Invisible">
+            <summary>
+            是否隐身
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Newpm">
+            <summary>
+            是否有新消息
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Newpmcount">
+            <summary>
+            新短消息数量
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Accessmasks">
+            <summary>
+            是否使用特殊权限
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Onlinestate">
+            <summary>
+            在线状态, 1为在线, 0为不在线
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.ShortUserInfo.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.UserInfo">
+            <summary>
+            完整用户信息描述类
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Website">
+            <summary>
+            网站
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Icq">
+            <summary>
+            icq号码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Qq">
+            <summary>
+            qq号码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Yahoo">
+            <summary>
+            yahoo messenger帐号
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Msn">
+            <summary>
+            msn messenger帐号
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Skype">
+            <summary>
+            skype帐号
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Location">
+            <summary>
+            来自
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Customstatus">
+            <summary>
+            自定义头衔
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Avatarwidth">
+            <summary>
+            头像宽度
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Avatarheight">
+            <summary>
+            头像高度
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Medals">
+            <summary>
+            勋章列表
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Bio">
+            <summary>
+            自我介绍
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Signature">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Sightml">
+            <summary>
+            签名Html(自动转换得到)
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Authstr">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Authtime">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Authflag">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Realname">
+            <summary>
+            用户实名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Idcard">
+            <summary>
+            用户身份证件号
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Mobile">
+            <summary>
+            用户移动电话
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Phone">
+            <summary>
+            用户固定电话
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserInfo.Ignorepm">
+            <summary>
+            短消息忽略列表
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Jsmenu">
+            <summary>
+            是否启用下拉菜单 -1 禁止启用 0 不启用 1 启用
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Level">
+            <summary>
+            使用等级  0 游客 1 会员  2 版主  3 管理员
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Parentid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Name">
+            <summary>
+            栏目名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Title">
+            <summary>
+            栏目说明
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Url">
+            <summary>
+            链接地址
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Target">
+            <summary>
+            目标框架 0 本窗口  1 新窗口
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Type">
+            <summary>
+            类型 0 系统  1 自定义
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Available">
+            <summary>
+            是否可用 0--不可用；1--可用
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.NavInfo.Displayorder">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._VotePage.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._VoteItem.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._USER_EMONEY_TYPE.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._sce_ask.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._m_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._huizhan.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hotel_compare.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._count_table.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._commentbak.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">
+            <summary>
+            AttachPaymentlogInfoCollection 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> class.
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.#ctor(HotelCloud.Entity.AttachPaymentlogInfoCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> class containing the elements of the specified source collection.
+            </summary>
+            <param name="value">A <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> with which to initialize the collection.</param>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.#ctor(HotelCloud.Entity.AttachPaymentlogInfo[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> class containing the specified array of <see cref="T:HotelCloud.Entity.AttachPaymentlogInfo">AttachPaymentlogInfo</see> Components.
+            </summary>
+            <param name="value">An array of <see cref="T:HotelCloud.Entity.AttachPaymentlogInfo">AttachPaymentlogInfo</see> Components with which to initialize the collection. </param>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.AddRange(HotelCloud.Entity.AttachPaymentlogInfo[])">
+            <summary>
+            Copies the elements of the specified <see cref="T:HotelCloud.Entity.AttachPaymentlogInfo">AttachPaymentlogInfo</see> array to the end of the collection.
+            </summary>
+            <param name="value">An array of type <see cref="T:HotelCloud.Entity.AttachPaymentlogInfo">AttachPaymentlogInfo</see> containing the Components to add to the collection.</param>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.AddRange(HotelCloud.Entity.AttachPaymentlogInfoCollection)">
+            <summary>
+            Adds the contents of another <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> to the end of the collection.
+            </summary>
+            <param name="value">A <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> containing the Components to add to the collection. </param>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.Contains(HotelCloud.Entity.AttachPaymentlogInfo)">
+            <summary>
+            Gets a value indicating whether the collection contains the specified <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see>.
+            </summary>
+            <param name="value">The <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> to search for in the collection.</param>
+            <returns><b>true</b> if the collection contains the specified object; otherwise, <b>false</b>.</returns>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.CopyTo(HotelCloud.Entity.AttachPaymentlogInfo[],System.Int32)">
+            <summary>
+            Copies the collection Components to a one-dimensional <see cref="T:System.Array">Array</see> instance beginning at the specified index.
+            </summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array">Array</see> that is the destination of the values copied from the collection.</param>
+            <param name="index">The index of the array at which to begin inserting.</param>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.IndexOf(HotelCloud.Entity.AttachPaymentlogInfo)">
+            <summary>
+            Gets the index in the collection of the specified <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see>, if it exists in the collection.
+            </summary>
+            <param name="value">The <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> to locate in the collection.</param>
+            <returns>The index in the collection of the specified object, if found; otherwise, -1.</returns>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> instance.
+            </summary>
+            <returns>An <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection.AttachPaymentlogInfoCollectionEnumerator">AttachPaymentlogInfoCollectionEnumerator</see> for the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> instance.</returns>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfoCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> at the specified index in the collection.
+            <para>
+            In C#, this property is the indexer for the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> class.
+            </para>
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.AttachPaymentlogInfoCollection.AttachPaymentlogInfoCollectionEnumerator">
+            <summary>
+            Supports a simple iteration over a <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see>.
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.AttachPaymentlogInfoCollectionEnumerator.#ctor(HotelCloud.Entity.AttachPaymentlogInfoCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection.AttachPaymentlogInfoCollectionEnumerator">AttachPaymentlogInfoCollectionEnumerator</see> class referencing the specified <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> object.
+            </summary>
+            <param name="mappings">The <see cref="T:HotelCloud.Entity.AttachPaymentlogInfoCollection">AttachPaymentlogInfoCollection</see> to enumerate.</param>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.AttachPaymentlogInfoCollectionEnumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the collection.
+            </summary>
+            <returns><b>true</b> if the enumerator was successfully advanced to the next element; <b>false</b> if the enumerator has passed the end of the collection.</returns>
+        </member>
+        <member name="M:HotelCloud.Entity.AttachPaymentlogInfoCollection.AttachPaymentlogInfoCollectionEnumerator.Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfoCollection.AttachPaymentlogInfoCollectionEnumerator.Current">
+            <summary>
+            Gets the current element in the collection.
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.AttachPaymentlogInfo">
+            <summary>
+            附件交易日志
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.Id">
+            <summary>
+            购买者 uid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.Uid">
+            <summary>
+            购买者 uid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.UserName">
+            <summary>
+            购买者用户名
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.Aid">
+            <summary>
+            被购买的附件 aid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.Authorid">
+            <summary>
+            附件所属评论作者的 uid
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.PostDateTime">
+            <summary>
+            购买日期
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.Amount">
+            <summary>
+            售价
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AttachPaymentlogInfo.NetAmount">
+            <summary>
+            作者所得（去除了积分交易税)
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.UserGroupInfo">
+            <summary>
+            用户组操作类
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Groupid">
+            <summary>
+            用户组ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Radminid">
+            <summary>
+            关联管理组ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Type">
+            <summary>
+            默认是私有,公用可以自己加入
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.System">
+            <summary>
+            用户组类型
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Grouptitle">
+            <summary>
+            用户组名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Creditshigher">
+            <summary>
+            积分下限
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Creditslower">
+            <summary>
+            积分上限
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Stars">
+            <summary>
+            星星数目
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Color">
+            <summary>
+            名称颜色
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Groupavatar">
+            <summary>
+            用户组头像
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Readaccess">
+            <summary>
+            阅读权限
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowvisit">
+            <summary>
+            是否允许访问论坛
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowpost">
+            <summary>
+            是否允许发贴
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowreply">
+            <summary>
+            是否允许回复
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowpostpoll">
+            <summary>
+            是否允许发起投票
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowdirectpost">
+            <summary>
+            允许使用 html 代码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowgetattach">
+            <summary>
+            是否允许下载附件
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowpostattach">
+            <summary>
+            是否发布附件
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowvote">
+            <summary>
+            是否允许参与投票
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowmultigroups">
+            <summary>
+            是否允许加入多个用户组
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowsearch">
+            <summary>
+            是否允许搜索
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowavatar">
+            <summary>
+            是否允许使用头像, 0=不允许, 1=允许使用系统自带头像, 2=允许使用Url地址头像(且包括1), 3允许使用上传头像(且包括1和2)
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowcstatus">
+            <summary>
+            是否允许自定义头衔
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowuseblog">
+            <summary>
+            是否允许使用blog
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowinvisible">
+            <summary>
+            是否允许隐身
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowtransfer">
+            <summary>
+            是否允许积分转账
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowsetreadperm">
+            <summary>
+            是否允许设置阅读积分权限
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowsetattachperm">
+            <summary>
+            是否允许设置下载积分限制
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowhidecode">
+            <summary>
+            是否允许使用hide代码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowhtml">
+            <summary>
+            是否允许发布html贴
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allownickname">
+            <summary>
+            是否允许使用昵称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowsigimgcode">
+            <summary>
+            签名是否支持图片代码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowviewpro">
+            <summary>
+            是否允许查看用户资料
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowviewstats">
+            <summary>
+            是否允许查看统计
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Disableperiodctrl">
+            <summary>
+            是否不受时间段限制
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Reasonpm">
+            <summary>
+            是否操作理由短消息通知作者
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxprice">
+            <summary>
+            评论\附件最高售价
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxpmnum">
+            <summary>
+            短消息最多条数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxsigsize">
+            <summary>
+            签名最多字节
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxattachsize">
+            <summary>
+            附件最大尺寸
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxsizeperday">
+            <summary>
+            每天最大附件总尺寸
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Attachextensions">
+            <summary>
+            允许附件类型
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Raterange">
+            <summary>
+            允许的评分范围
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowspace">
+            <summary>
+            是否允许申请个人空间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxspaceattachsize">
+            <summary>
+            个人空间附件最大尺寸
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxspacephotosize">
+            <summary>
+            个人空间照片最大尺寸
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowdebate">
+            <summary>
+            是否允许发起辩论
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowbonus">
+            <summary>
+            是否允许发起悬赏
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Minbonusprice">
+            <summary>
+            最低悬赏价格
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Maxbonusprice">
+            <summary>
+            最高悬赏价格
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserGroupInfo.Allowtrade">
+            <summary>
+            是否允许发表交易
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._TuanCity.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._room_info.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Question.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._LogOperation.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._government_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._FormNo.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._excel_el.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._exam_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._elong_new.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._delphi_user.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._business_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._build_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._ApplyCenter.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._view_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._tbl_sys_user.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._OrderItem.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._new_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._huizhan2.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hotel_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._government_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._EL_note.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._EL_coopr.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._elong_2.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._bus_line.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_entertainment.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.AdShowInfo">
+            <summary>
+            广告项
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AdShowInfo.Advid">
+            <summary>
+            广告id
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AdShowInfo.Displayorder">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AdShowInfo.Code">
+            <summary>
+            广告内容代码
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.AdShowInfo.Parameters">
+            <summary>
+            广告参数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._USER_IMONEY_TYPE.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._restaurant_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._olympics_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._image.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._huizhan1.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._DictionaryEntry.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._CustomerCare.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.SearchType">
+            <summary>
+            搜索类型
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.All">
+            <summary>
+            全部搜索
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.DigestTopic">
+            <summary>
+            搜索精华评论
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.TopicTitle">
+            <summary>
+            搜索评论标题
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.PostTitle">
+            <summary>
+            搜索帖子标题
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.PostContent">
+            <summary>
+            帖子全文检索
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.AlbumTitle">
+            <summary>
+            搜索相册标题
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.SpacePostTitle">
+            <summary>
+            搜索日志标题
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.SearchType.ByPoster">
+            <summary>
+            仅按作者搜索,搜索论坛、空间、相册
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoStatus.Owner">
+            <summary>
+            仅所有者可评论
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoStatus.Buddy">
+            <summary>
+            好友可评论
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.PhotoStatus.RegisteredUser">
+            <summary>
+            注册用户可评论
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.CreditsOperationType">
+            <summary>
+            积分操作类型，如发表评论等
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.CreditsOperationType.PostTopic">
+            <summary>
+            作者发新评论增加的积分数, 如果该评论被删除, 作者积分也会按此标准相应减少
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.CreditsOperationType.PostReply">
+            <summary>
+            作者发新回复增加的积分数, 如果该回复被删除, 作者积分也会按此标准相应减少
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.CreditsOperationType.Digest">
+            <summary>
+            评论被加入精华时单位级别作者增加的积分数(根据精华级别乘以1～3), 如果该评论被移除精华, 作者积分也会按此标准相应减少
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.CreditsOperationType.UploadAttachment">
+            <summary>
+            用户每上传一个附件增加的积分数, 如果该附件被删除, 发布者积分也会按此标准相应减少
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.CreditsOperationType.SendMessage">
+            <summary>
+            用户每发送一条短消息扣除的积分数
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.CreditsOperationType.TradeSucceed">
+            <summary>
+            用户每成功进行一次交易后增加的积分数
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.CreditsOperationType.Vote">
+            <summary>
+            用户每参与一次投票后增加的积分数
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._user_Servicedianping.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._room.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._jingdian.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._Hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Comment.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._chain_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._cantonfair_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._adtype.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._User_Message.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._UserWithdraw.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._tbl_bas_dept.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._sys_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Reply.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud._m_youji.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._jdwz.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._huizhan_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._goverment.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._conferenceAmenities.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Article.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_date.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.UserExtcreditsInfo">
+            <summary>
+            UserExtcreditsInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Name">
+            <summary>
+            积分名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Unit">
+            <summary>
+            积分单位
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Rate">
+            <summary>
+            兑换比率
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Init">
+            <summary>
+            注册初始积分
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Topic">
+            <summary>
+            发评论
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Reply">
+            <summary>
+            回复
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Digest">
+            <summary>
+            加精华
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Upload">
+            <summary>
+            上传附件
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Download">
+            <summary>
+            下载附件
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Pm">
+            <summary>
+            发短消息
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Search">
+            <summary>
+            搜索
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Pay">
+            <summary>
+            交易成功
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.UserExtcreditsInfo.Vote">
+            <summary>
+            参与投票
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._VoteTitle.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._user_tixian.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._subindex_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._search_content.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._GaranteeRule.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._exam_type.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._card_table.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._building.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._ad.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.TagInfo">
+            <summary>
+            标签实体类
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Tagid">
+            <summary>
+            TagID
+            </summary>   
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Tagname">
+            <summary>
+            Tag名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Userid">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Postdatetime">
+            <summary>
+            提交时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Orderid">
+            <summary>
+            顺序ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Color">
+            <summary>
+            颜色值(6位html格式)
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Count">
+            <summary>
+            该Tag相关内容总数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.TagInfo.Pcount">
+            <summary>
+            该Tag相关图片总数
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.FavoriteType">
+            <summary>
+            收藏类型
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.FavoriteType.ForumTopic">
+            <summary>
+            论坛评论
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.FavoriteType.Album">
+            <summary>
+            相册
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.FavoriteType.SpacePost">
+            <summary>
+            个人空间日志
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.FavoriteType.Goods">
+            <summary>
+            商品
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._UserCorrection.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Question_Type.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._m_canguan.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud._HotelDetail.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hospital_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._dingdan_info.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._col_ask.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._chain_info.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._airportPickUpService.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._AccountTitle.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="T:HotelCloud.Entity.BonusLogInfo">
+            <summary>
+            奖金日志实体
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Tid">
+            <summary>
+            评论ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Authorid">
+            <summary>
+            作者ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Answerid">
+            <summary>
+            回答者ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Answername">
+            <summary>
+            回答者名称
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Pid">
+            <summary>
+            帖子ID
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Dateline">
+            <summary>
+            到期时间
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Bonus">
+            <summary>
+            回答数
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Extid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HotelCloud.Entity.BonusLogInfo.Isbest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.StatVarInfo._type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.StatVarInfo._variable">
+            <summary>
+            变量
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.StatVarInfo._value">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.StatInfo._type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.StatInfo._variable">
+            <summary>
+            变量
+            </summary>
+        </member>
+        <member name="F:HotelCloud.Entity.StatInfo._count">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._USER_INTRO_MONEY.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._traffic_line.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._tbl_sys_user_permit.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._pub_user.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud._m_jianzu.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._metro_hotel.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._member_table.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._member_emoneybak.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._laiyuan.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._hotel_recommend.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._HelpType.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._FaxRecieved.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._EL_card.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._economical_category.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._Content_table.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._CancelOrder.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._bus_position.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._around_scenery.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._airport.AddNew">
+            <summary>
+              新增记录
+            </summary>
+        </member>
+        <member name="M:HotelCloud.Entity._AddValue.AddNew">
+            <summary>
+              public Overrides void AddNew()
+            </summary>
+        </member>
+    </members>
+</doc>
